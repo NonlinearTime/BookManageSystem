@@ -1,0 +1,12 @@
+.button {
+    -fx-background-color: lightgray;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+#headImg {
+    -fx-background-image: url("../../pictures/exchange.png");
+    -fx-background-size: stretch;
+}

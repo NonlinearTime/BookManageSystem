@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-background-color: lightgray;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+
+#headImg {
+    -fx-background-image: url("../../pictures/location.png");
+    -fx-background-size: stretch;
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+}

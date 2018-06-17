@@ -1,0 +1,7 @@
+.button {
+    -fx-background-color: whitesmoke;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}

@@ -1,0 +1,176 @@
+#infoToolBar {
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch
+}
+
+#itemListView .scroll-bar:horizontal .track,
+#itemListView .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+#managerItemListView .scroll-bar:horizontal .increment-button ,
+#managerItemListView .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+}
+
+#managerItemListView .scroll-bar:vertical .increment-button ,
+#managerItemListView .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+#managerItemListView  .scroll-bar .increment-arrow,
+#managerItemListView  .scroll-bar .decrement-arrow{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+
+#managerItemListView .scroll-bar:horizontal .thumb,
+#managerItemListView .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.jfx-list-cell-container {
+    -fx-alignment: center-left;
+}
+
+.jfx-list-cell-container > .label {
+    -fx-text-fill: BLACK;
+}
+
+.jfx-list-cell:odd:selected > .jfx-rippler > StackPane, .jfx-list-cell:even:selected > .jfx-rippler > StackPane {
+    -fx-background-color: rgba(0, 0, 255, 0.2);
+}
+
+.jfx-list-cell {
+    -fx-background-insets: 0.0;
+    -fx-text-fill: BLACK;
+}
+
+.jfx-list-cell:odd, .jfx-list-cell:even {
+    -fx-background-color: WHITE;
+}
+
+.jfx-list-cell:filled:hover {
+    -fx-text-fill: black;
+}
+
+.jfx-list-cell .jfx-rippler {
+    -jfx-rippler-fill: BLUE;
+}
+
+.jfx-list-view {
+    -fx-background-insets: 0;
+    -jfx-cell-horizontal-margin: 0.0;
+    -jfx-cell-vertical-margin: 5.0;
+    -jfx-vertical-gap: 10px;
+    -jfx-expanded: false;
+    -fx-pref-width: 180;
+}
+
+#titleBar1 {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 5px;
+}
+
+#searchBar1 {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+#titleBar2 {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 5px;
+}
+
+#searchBar2  {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+#titleBar3 {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 5px;
+}
+
+#searchBar3  {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+#titleBar4 {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 5px;
+}
+
+#searchBar4  {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+#titleBar5 {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 5px;
+}
+
+#searchBar5 {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+#bookTable{
+    -fx-border-color: lightgray;
+    /*-fx-border-width: 5 px;*/
+    /*-fx-border-radius: 5px;*/
+    -fx-background-color: white;
+}
+
+
+.tree-table-view .tree-table-cell {
+    -fx-alignment: center;
+    -fx-cell-size: 30px;
+}
+
+
+#bookSearchButton{
+    -fx-background-color: cornflowerblue;
+}
+
+#rentSearchButton {
+    fx-background-color: cornflowerblue;
+}
+
+#timeSearchButton {
+    fx-background-color: cornflowerblue;
+}
+
+#profileButton {
+    -fx-background-image: url("../../pictures/boy.png");
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+}
+
+
+.button {
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+

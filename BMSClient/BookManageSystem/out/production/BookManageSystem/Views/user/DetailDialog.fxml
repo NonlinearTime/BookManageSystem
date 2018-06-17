@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" stylesheets="@DetailDialogStyle.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.user.DetailDialog">
+   <children>
+      <VBox alignment="CENTER" layoutX="58.0" layoutY="92.0" prefHeight="317.0" prefWidth="484.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="484.0" spacing="100.0">
+               <children>
+                  <Label fx:id="label1" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label2" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="179.0" prefHeight="30.0" prefWidth="484.0" spacing="100.0">
+               <children>
+                  <Label fx:id="label3" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label4" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="194.0" prefHeight="30.0" prefWidth="484.0" spacing="100.0">
+               <children>
+                  <Label fx:id="label5" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label6" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="209.0" prefHeight="30.0" prefWidth="484.0" spacing="100.0">
+               <children>
+                  <Label fx:id="label7" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label8" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="224.0" prefHeight="30.0" prefWidth="484.0" spacing="100.0">
+               <children>
+                  <Label fx:id="label9" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label10" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="239.0" prefHeight="30.0" prefWidth="484.0" spacing="100.0">
+               <children>
+                  <Label fx:id="label11" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label12" prefHeight="28.0" prefWidth="289.0">
+                     <font>
+                        <Font name=".PingFang SC Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="enterBtn" text="确定" />
+         </children>
+      </VBox>
+      <Label fx:id="headImg" layoutX="268.0" layoutY="28.0" prefHeight="64.0" prefWidth="64.0" />
+   </children>
+</AnchorPane>

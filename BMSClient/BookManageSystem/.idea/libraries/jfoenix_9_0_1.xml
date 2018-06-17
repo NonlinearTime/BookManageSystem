@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jfoenix-9.0.1">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/jre64/lib/jfoenix-9.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
