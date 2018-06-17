@@ -160,8 +160,8 @@
       <file leaf-file-name="ListItem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Views/Conponent/ListItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+            <state relative-caret-position="422">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -560,12 +560,12 @@
       <workItem from="1529199362840" duration="4341000" />
       <workItem from="1529204465451" duration="73000" />
       <workItem from="1529204801613" duration="318000" />
-      <workItem from="1529205336450" duration="391000" />
+      <workItem from="1529205336450" duration="764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137905000" />
+    <option name="totallyTimeSpent" value="138278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -580,7 +580,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32921812" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32959184" />
       <window_info id="Capture Tool" order="5" />
@@ -989,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/Conponent/ListItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="422">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
