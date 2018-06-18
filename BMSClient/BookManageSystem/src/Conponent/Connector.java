@@ -3,9 +3,11 @@ package Conponent;
 import Network.Client;
 import Network.Server;
 import StageController.StageController;
+import Views.data.DataContainer;
 import Views.login.FndBkPwdController;
 import Views.login.LoginDialogController;
 import Views.login.RegisterDialogController;
+import Views.user.UserAltpwdDialog;
 import javafx.application.Platform;
 import sample.Main;
 
@@ -81,13 +83,47 @@ public class Connector {
                 break;
             case MessageType.adminLoginAdmit:
                 onAdminLoginAdmitCallBack(messageData);
+                break;
             case MessageType.loginDeny:
                 onLoginDenyCallBack(messageData);
+                break;
+            case MessageType.altAdmit:
+                onAltAmitCallBack(messageData);
+                break;
+            case MessageType.altDeny:
+                onAltDenyCallBack(messageData);
                 break;
             default:
                 break;
         }
     }
+
+    private void onAltDenyCallBack(MessageData messageData) {
+        ArrayList<String> data = messageData.getData();
+        assert data.size() >= 1;
+        Platform.runLater(() -> {
+            UserAltpwdDialog userAltpwdDialog = (UserAltpwdDialog) stageController.getController(Main.UserAltpwdDialogID);
+            userAltpwdDialog.popHintDialog("密码修改失败！" + data.get(0));
+        });
+    }
+
+    private void onAltAmitCallBack(MessageData messageData) {
+        Platform.runLater(() -> {
+            UserAltpwdDialog userAltpwdDialog = (UserAltpwdDialog) stageController.getController(Main.UserAltpwdDialogID);
+            userAltpwdDialog.popHintDialog("密码修改成功!");
+            ArrayList<String> prof = new ArrayList<>();
+            prof.add(DataContainer.profile.get(0));
+            prof.add(DataContainer.profile.get(1));
+            prof.add(userAltpwdDialog.getNewPwd());
+            prof.add(DataContainer.profile.get(3));
+            prof.add(DataContainer.profile.get(4));
+            prof.add(DataContainer.profile.get(5));
+            prof.add(DataContainer.profile.get(6));
+            DataContainer.profile = prof;
+            userAltpwdDialog.clearInfo();
+        });
+    }
+
 
     private void onRegAdmitCallBack(MessageData messageData){
         ArrayList<String> data = messageData.getData();
@@ -126,14 +162,18 @@ public class Connector {
     }
 
     private void onUserLoginAdmitCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 7;
         Platform.runLater(() -> {
             stageController.setStage(Main.UserViewID, Main.LoginDialogID);
+            DataContainer.profile = messageData.getData();
         });
     }
 
     private void onAdminLoginAdmitCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 7;
         Platform.runLater(() -> {
             stageController.setStage(Main.ManagerViewID, Main.LoginDialogID);
+            DataContainer.profile = messageData.getData();
         });
     }
 

@@ -2,33 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/66779b74-362d-4391-b421-42f6ea6e850e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66779b74-362d-4391-b421-42f6ea6e850e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookManageSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BookManageSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Network/NetworkConnection$ConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Network/NetworkConnection$ConnectionThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Network/NetworkConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Network/NetworkConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/Connector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/DataContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/DataContainer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialog.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialog.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Network/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Network/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/NetworkConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/login/FndBkPwdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/login/FndBkPwdController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/login/FndBkPwdDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/login/FndBkPwdDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/login/LoginDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/login/LoginDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/login/LoginDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/login/LoginDialogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/login/RegisterDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/login/RegisterDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/login/RegisterDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/login/RegisterDialogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$17$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$17$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$17$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$25$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$25$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$25$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$25$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$9$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$9$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$BookTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$BookTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$BookTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$BookTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$RentTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$RentTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$RentTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$RentTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$TimeTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$TimeTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$TimeTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$TimeTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conponent/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/Connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conponent/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/data/DataContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/data/DataContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/ProfileView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/ProfileView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/ProfileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/ProfileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BMSServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/BMSServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/BMSServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Network/SocketThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Network/SocketThread.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,6 +103,20 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="BookDB: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="BookDB: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="Administrator: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="BookDB: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="User: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -116,24 +164,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="307">
+              <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
               <folding>
-                <element signature="e#2829#2830#0" expanded="true" />
-                <element signature="e#2857#2858#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StageController/StageController.java">
+      <file leaf-file-name="LoginDialogController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="1023">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
             </state>
           </provider>
         </entry>
@@ -147,80 +194,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Network/Client.java">
+      <file leaf-file-name="Administrator" pinned="false" current-in-tab="false">
+        <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/Administrator">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Conponent/MessageType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/user/ProfileView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="626" selection-start-line="626" selection-end-line="626" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAltpwdDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="122" column="44" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
+              <folding>
+                <element signature="method#popHintDialog#0;class#UserAltpwdDialog#0" />
+                <element signature="e#3487#3488#0" expanded="true" />
+                <element signature="e#3530#3531#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/data/DataContainer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2153">
-              <caret line="120" column="32" lean-forward="true" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginDialogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/login/RegisterDialog.fxml">
+      <file leaf-file-name="OperationDialog.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/user/OperationDialog.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="FndBkPwdController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Views/login/FndBkPwdController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding>
-                <element signature="e#1285#1286#0" expanded="true" />
-                <element signature="e#1348#1349#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FndBkPwdDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/login/FndBkPwdDialog.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterDialogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/login/RegisterDialogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1361#1362#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -287,7 +327,6 @@
         <option value="$PROJECT_DIR$/src/Views/FndBkPwdController.java" />
         <option value="$PROJECT_DIR$/src/Views/UserViewController.java" />
         <option value="$PROJECT_DIR$/src/Views/data/DataContainner.java" />
-        <option value="$PROJECT_DIR$/src/Views/data/DataContainer.java" />
         <option value="$PROJECT_DIR$/src/Views/user/OperationDialog.fxml" />
         <option value="$PROJECT_DIR$/src/Views/user/OperationDialog.java" />
         <option value="$PROJECT_DIR$/src/Views/user/DetailDialog.fxml" />
@@ -296,8 +335,6 @@
         <option value="$PROJECT_DIR$/src/Views/user/ProfileView.fxml" />
         <option value="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.fxml" />
         <option value="$PROJECT_DIR$/src/Views/user/AltPwdDialof.css" />
-        <option value="$PROJECT_DIR$/src/Views/user/ProfileView.java" />
-        <option value="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" />
         <option value="$PROJECT_DIR$/src/Views/user/AltPwdDialog.css" />
         <option value="$PROJECT_DIR$/src/Views/user/DetailDialogStyle.css" />
         <option value="$PROJECT_DIR$/src/Views/user/ProfileView.css" />
@@ -309,20 +346,23 @@
         <option value="$PROJECT_DIR$/src/Views/login/RegDialog.css" />
         <option value="$PROJECT_DIR$/src/Views/login/FndBkPwd.css" />
         <option value="$PROJECT_DIR$/src/Network/Server.java" />
-        <option value="$PROJECT_DIR$/src/Views/user/UserViewController.java" />
         <option value="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" />
         <option value="$PROJECT_DIR$/src/Views/Conponent/ListItem.java" />
         <option value="$PROJECT_DIR$/src/Network/Client.java" />
         <option value="$PROJECT_DIR$/src/Conponent/Email.java" />
         <option value="$PROJECT_DIR$/src/Views/login/RegisterDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/Conponent/MessageType.java" />
         <option value="$PROJECT_DIR$/src/Conponent/MessageData.java" />
         <option value="$PROJECT_DIR$/src/Network/NetworkConnection.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/Conponent/Connector.java" />
         <option value="$PROJECT_DIR$/src/Views/login/LoginDialogController.java" />
         <option value="$PROJECT_DIR$/src/Views/login/RegisterDialogController.java" />
         <option value="$PROJECT_DIR$/src/Views/login/FndBkPwdController.java" />
+        <option value="$PROJECT_DIR$/src/Views/user/ProfileView.java" />
+        <option value="$PROJECT_DIR$/src/Views/data/DataContainer.java" />
+        <option value="$PROJECT_DIR$/src/Views/user/UserViewController.java" />
+        <option value="$PROJECT_DIR$/src/Conponent/MessageType.java" />
+        <option value="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" />
+        <option value="$PROJECT_DIR$/src/Conponent/Connector.java" />
       </list>
     </option>
   </component>
@@ -606,12 +646,12 @@
       <workItem from="1529205336450" duration="764000" />
       <workItem from="1529218937516" duration="13357000" />
       <workItem from="1529247776638" duration="12117000" />
-      <workItem from="1529287393664" duration="9577000" />
+      <workItem from="1529287393664" duration="17575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173329000" />
+    <option name="totallyTimeSpent" value="181327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -626,13 +666,13 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.30555555" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.30555555" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32959184" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32921812" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15" />
       <window_info anchor="bottom" id="Statistic" order="0" weight="0.32921812" />
       <window_info anchor="right" id="Database" order="5" visible="true" weight="0.072916664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -677,13 +717,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre64/lib/jfoenix-9.0.1.jar!/com/jfoenix/controls/JFXCheckBox.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/jre64/lib/jfoenix-9.0.1.jar!/css/jfoenix-design.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -710,20 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/user/ProfileView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -835,24 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6266">
-          <caret line="310" column="133" selection-start-line="310" selection-start-column="130" selection-end-line="310" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/Conponent/ListItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/data/DataContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -935,13 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/Administrator">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/FineReg">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -953,13 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conponent/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1005,31 +996,7 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
-          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/User">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2153">
-          <caret line="120" column="32" lean-forward="true" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="28" />
+          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1051,11 +1018,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/login/FndBkPwdController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="364">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding>
             <element signature="e#1285#1286#0" expanded="true" />
             <element signature="e#1348#1349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/OperationDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/ProfileView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="626" selection-start-line="626" selection-end-line="626" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conponent/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="122" column="44" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
+          <folding>
+            <element signature="method#popHintDialog#0;class#UserAltpwdDialog#0" />
+            <element signature="e#3487#3488#0" expanded="true" />
+            <element signature="e#3530#3531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/data/DataContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/Administrator">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

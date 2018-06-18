@@ -26,7 +26,7 @@
          </rowConstraints>
          <children>
             <JFXButton fx:id="userIcon" accessibleRole="IMAGE_VIEW" prefHeight="64.0" prefWidth="64.0" text=" " />
-            <JFXTextField fx:id="userText" alignment="BOTTOM_LEFT" focusColor="#535761" opacity="0.75" prefHeight="43.0" prefWidth="226.0" promptText="用户名" unFocusColor="#b5b8b9" GridPane.columnIndex="1">
+            <JFXTextField fx:id="userText" alignment="BOTTOM_LEFT" focusColor="#535761" opacity="0.75" prefHeight="43.0" prefWidth="226.0" promptText="账号" unFocusColor="#b5b8b9" GridPane.columnIndex="1">
                <font>
                   <Font size="18.0" />
                </font>

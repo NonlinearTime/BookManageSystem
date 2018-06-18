@@ -1,11 +1,15 @@
 package Views.user;
 
+import Conponent.MessageData;
+import Conponent.MessageType;
 import StageController.ControlledStage;
 import StageController.StageController;
 import Views.Conponent.ListItem;
+import Views.data.DataContainer;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.cells.editors.base.JFXTreeTableCell;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import javafx.application.Platform;
 import javafx.beans.InvalidationListener;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -34,6 +38,7 @@ import javafx.util.Callback;
 import sample.Main;
 
 import javax.swing.text.DefaultEditorKit;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.print.Book;
 import java.io.FileInputStream;
@@ -606,13 +611,20 @@ public class UserViewController implements ControlledStage, Initializable {
     }
 
     public void onProfileButtonClicked() {
+        assert DataContainer.profile.size() >= 7;
         userViewController.getStage(Main.UserProfileViewID).setTitle("个人信息");
         userViewController.setStage(Main.UserProfileViewID);
+        Platform.runLater(() -> {
+            ProfileView profileView = (ProfileView) userViewController.getController(Main.UserProfileViewID);
+            profileView.clearInfo();
+            profileView.setInfo(DataContainer.profile);
+        });
     }
 
     public void onAltpwdButtonClicked() {
         userViewController.getStage(Main.UserAltpwdDialogID).setTitle("修改密码");
         userViewController.setStage(Main.UserAltpwdDialogID);
+
     }
 
     public void onQuitButtonClicked() {

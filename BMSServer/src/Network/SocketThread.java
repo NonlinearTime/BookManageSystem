@@ -69,8 +69,48 @@ public class SocketThread extends Thread {
             case MessageType.adminLoginReq:
                 onAdminLoginCallBack(messageData);
                 break;
+            case MessageType.altPwd:
+                onAltPwdCallBack(messageData);
             default:
                 break;
+        }
+    }
+
+    private void onAltPwdCallBack(MessageData messageData) {
+        ArrayList<String> data = messageData.getData();
+        assert data.size() >= 4;
+        String code = data.get(3);
+        String email = data.get(2);
+        String newPwd = data.get(1);
+        String userID = data.get(0);
+        MessageData reply = new MessageData();
+
+        if (!code.equals(codeMap.get(email))) {
+            reply.setMessageType(MessageType.altDeny);
+            reply.getData().add("验证码错误");
+            try {
+                send(reply);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return;
+        }
+        try {
+            System.out.println(Integer.valueOf(userID));
+            preparedStatement = DataAccess.getConnection().prepareStatement(
+                    "update User set uPwd = ? where uID = ?"
+            );
+            preparedStatement.setString(1,newPwd);
+            preparedStatement.setInt(2,Integer.valueOf(userID));
+            preparedStatement.executeUpdate();
+            reply.setMessageType(MessageType.altAdmit);
+            try {
+                send(reply);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
@@ -250,9 +290,6 @@ public class SocketThread extends Thread {
         String sql = "select * from Administrator where aID = " + data.get(0);
         ResultSet rs = DataAccess.Query(sql);
         try {
-            if (rs.wasNull()) {
-
-            }
             if (!rs.next()) {
                 System.out.println("next");
                 reply.setMessageType(MessageType.loginDeny);
@@ -263,7 +300,7 @@ public class SocketThread extends Thread {
             String pwd = rs.getString("aPwd");
             if (pwd.trim().equals(data.get(1).trim())) {
                 reply.setMessageType(MessageType.adminLoginAdmit);
-                reply.getData().add(rs.getString(String.valueOf(rs.getInt("aID"))));
+                reply.getData().add(String.valueOf(rs.getInt("aID")));
                 reply.getData().add(rs.getString("aName"));
                 reply.getData().add(rs.getString("aPwd"));
                 reply.getData().add(rs.getString("email"));

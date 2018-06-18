@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,13 +21,13 @@
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="新密码" />
-                  <JFXTextField fx:id="pwdField" prefWidth="169.0" />
+                  <JFXPasswordField fx:id="pwdField" prefHeight="24.0" prefWidth="169.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="69.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="重复输入" />
-                  <JFXTextField fx:id="dPwdField" prefWidth="169.0" />
+                  <JFXPasswordField fx:id="dPwdField" prefHeight="24.0" prefWidth="169.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">

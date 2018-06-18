@@ -16,26 +16,26 @@
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                <children>
                   <Label text="账户密码" />
-                  <JFXTextField prefHeight="24.0" prefWidth="206.0" />
+                  <JFXTextField fx:id="pwdField" prefHeight="24.0" prefWidth="206.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                <children>
                   <Label text="重置密码" />
-                  <JFXTextField prefHeight="24.0" prefWidth="206.0" />
+                  <JFXTextField fx:id="newPwdField" prefHeight="24.0" prefWidth="206.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" stylesheets="@AltPwdDialog.css">
                <children>
                   <Label text="重新输入" />
-                  <JFXTextField prefWidth="206.0" />
+                  <JFXTextField fx:id="dPwdField" prefWidth="206.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="52.0" text="验证码" />
-                  <JFXTextField prefHeight="24.0" prefWidth="110.0" />
-                  <JFXButton ripplerFill="#a4a4a4" text="获取验证码">
+                  <JFXTextField fx:id="codeField" prefHeight="24.0" prefWidth="110.0" />
+                  <JFXButton fx:id="codeButton" onMouseClicked="#onCodeButtonClicked" ripplerFill="#a4a4a4" text="获取验证码">
                      <font>
                         <Font name=".PingFang SC Medium" size="13.0" />
                      </font>
@@ -45,7 +45,7 @@
             <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="412.0">
                <children>
                   <Pane prefHeight="37.0" prefWidth="104.0" />
-                  <JFXButton onMouseClicked="#onEnterButtonClicked" text="确定" />
+                  <JFXButton fx:id="enterButton" onMouseClicked="#onEnterButtonClicked" text="确定" />
                </children>
             </HBox>
          </children>
