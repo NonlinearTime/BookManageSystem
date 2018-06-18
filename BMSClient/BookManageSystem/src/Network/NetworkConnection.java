@@ -1,10 +1,16 @@
 package Network;
 
-import javax.swing.plaf.TableHeaderUI;
-import java.io.*;
+import Conponent.MessageData;
+import Conponent.MessageType;
+
+import java.awt.desktop.SystemSleepEvent;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.rmi.server.ServerCloneException;
+import java.util.ArrayList;
 import java.util.function.Consumer;
 
 public abstract class NetworkConnection {
@@ -37,15 +43,16 @@ public abstract class NetworkConnection {
         private ObjectOutputStream out;
         @Override
         public void run() {
-            try {
+            try (
                 ServerSocket server = isServer() ? new ServerSocket(getPort()) : null;
-                assert server != null;
                 Socket socket = isServer() ? server.accept() : new Socket(getIP() ,getPort());
                 ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
-                ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
+                ObjectInputStream in = new ObjectInputStream(socket.getInputStream())) {
                 this.out = out;
                 this.socket = socket;
                 this.socket.setTcpNoDelay(true);
+
+                System.out.println(this.socket.isConnected());
 
                 while (true) {
                     Serializable data = (Serializable) in.readObject();
@@ -53,7 +60,8 @@ public abstract class NetworkConnection {
                 }
 
             } catch (Exception e) {
-                onReceiveCallback.accept("Connection closed");
+                System.out.println(e);
+                onReceiveCallback.accept(new MessageData(MessageType.error, new ArrayList<>()));
             }
 
         }

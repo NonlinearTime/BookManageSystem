@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="541.0" stylesheets="@FndBkPwd.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.login.FndBkPwdController">
    <children>
       <VBox layoutX="201.0" layoutY="39.0" prefHeight="286.0" prefWidth="299.0">
@@ -15,38 +14,38 @@
             <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="账号" />
-                  <JFXTextField prefHeight="24.0" prefWidth="169.0" />
+                  <JFXTextField fx:id="userField" prefHeight="24.0" prefWidth="169.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="新密码" />
-                  <JFXTextField prefWidth="169.0" />
+                  <JFXTextField fx:id="pwdField" prefWidth="169.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="69.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="重复输入" />
-                  <JFXTextField prefWidth="169.0" />
+                  <JFXTextField fx:id="dPwdField" prefWidth="169.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="邮箱" />
-                  <JFXTextField prefWidth="169.0" />
+                  <JFXTextField fx:id="emailField" prefWidth="169.0" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="187.0" prefHeight="54.0" prefWidth="269.0" spacing="5.0">
                <children>
                   <Label prefHeight="14.0" prefWidth="60.0" text="验证码" />
-                  <JFXTextField prefHeight="24.0" prefWidth="119.0" />
+                  <JFXTextField fx:id="codeField" prefHeight="24.0" prefWidth="119.0" />
                   <JFXButton onMouseClicked="#onGetCodeClicked" prefHeight="24.0" prefWidth="47.0" text="获取" />
                </children>
             </HBox>
          </children>
       </VBox>
       <Label fx:id="headImg" layoutX="47.0" layoutY="134.0" prefHeight="96.0" prefWidth="96.0" />
-      <JFXButton layoutX="200.0" layoutY="325.0" onMouseClicked="#onFndBckButtonClicked" text="确定" />
-      <JFXButton layoutX="350.0" layoutY="325.0" onMouseClicked="#onQuitButtonClicked" text="退出" />
+      <JFXButton fx:id="fndBckButton" layoutX="200.0" layoutY="325.0" onMouseClicked="#onFndBckButtonClicked" text="确定" />
+      <JFXButton fx:id="quitButton" layoutX="350.0" layoutY="325.0" onMouseClicked="#onQuitButtonClicked" text="退出" />
    </children>
 </AnchorPane>

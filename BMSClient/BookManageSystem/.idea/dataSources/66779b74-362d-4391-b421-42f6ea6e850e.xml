@@ -928,7 +928,7 @@
       <Engine>InnoDB</Engine>
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="234" parent="2" name="BorrowingReg">
+    <table id="234" parent="2" name="BorrowReg">
       <Engine>InnoDB</Engine>
       <Collation>utf8_general_ci</Collation>
     </table>
@@ -956,36 +956,44 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="241" parent="232" name="aName">
       <Position>2</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="242" parent="232" name="aPwd">
       <Position>3</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="243" parent="232" name="email">
       <Position>4</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="244" parent="232" name="aTele">
       <Position>5</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="245" parent="232" name="aType">
       <Position>6</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="246" parent="232" name="rTime">
       <Position>7</Position>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="247" parent="232" name="PRIMARY">
@@ -1058,6 +1066,7 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="261" parent="234" name="uID">
@@ -1083,6 +1092,7 @@
     <column id="265" parent="234" name="isBack">
       <Position>6</Position>
       <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="266" parent="234" name="uID">
@@ -1098,7 +1108,7 @@
       <ColNames>rID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="269" parent="234" name="BorrowingReg_ibfk_1">
+    <foreign-key id="269" parent="234" name="BorrowReg_ibfk_1">
       <ColNames>uID</ColNames>
       <RefSchemaName>BookDB</RefSchemaName>
       <RefTableName>User</RefTableName>
@@ -1106,7 +1116,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="270" parent="234" name="BorrowingReg_ibfk_2">
+    <foreign-key id="270" parent="234" name="BorrowReg_ibfk_2">
       <ColNames>bID</ColNames>
       <RefSchemaName>BookDB</RefSchemaName>
       <RefTableName>Book</RefTableName>
@@ -1118,11 +1128,13 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="272" parent="235" name="fineID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="273" parent="235" name="fineID">
@@ -1146,6 +1158,7 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="277" parent="236" name="uID">
@@ -1161,16 +1174,20 @@
     <column id="279" parent="236" name="fMount">
       <Position>4</Position>
       <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="280" parent="236" name="fDate">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="281" parent="236" name="isSolved">
       <Position>6</Position>
       <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="282" parent="236" name="uID">
@@ -1197,7 +1214,7 @@
     <foreign-key id="286" parent="236" name="FineReg_ibfk_2">
       <ColNames>rID</ColNames>
       <RefSchemaName>BookDB</RefSchemaName>
-      <RefTableName>BorrowingReg</RefTableName>
+      <RefTableName>BorrowReg</RefTableName>
       <RefColNames>bID</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
@@ -1206,26 +1223,31 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="237" name="BookID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="289" parent="237" name="UserID">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="290" parent="237" name="RentDate">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="291" parent="237" name="ReturnDate">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="292" parent="237" name="BookID">
@@ -1261,21 +1283,25 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="298" parent="238" name="BookID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="299" parent="238" name="UserID">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="300" parent="238" name="RetDate">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="301" parent="238" name="BookID">
@@ -1311,36 +1337,44 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="307" parent="239" name="uName">
       <Position>2</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="308" parent="239" name="uPwd">
       <Position>3</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="309" parent="239" name="email">
       <Position>4</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="310" parent="239" name="uTele">
       <Position>5</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="311" parent="239" name="uType">
       <Position>6</Position>
       <DataType>char(50)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="312" parent="239" name="rTime">
       <Position>7</Position>
       <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="313" parent="239" name="PRIMARY">

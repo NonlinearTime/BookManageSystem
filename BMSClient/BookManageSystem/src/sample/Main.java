@@ -1,5 +1,6 @@
 package sample;
 
+import Conponent.Connector;
 import StageController.StageController;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -34,6 +35,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         stageController = new StageController();
         stageController.setPrimaryStage("primaryStage",primaryStage);
+
+        Connector.getInstance().setStageController(stageController);
+        Connector.getInstance().start();
 
         stageController.loadStage(LoginDialogID,LoginDialogRes);
         stageController.loadStage(UserViewID,UserViewRes);

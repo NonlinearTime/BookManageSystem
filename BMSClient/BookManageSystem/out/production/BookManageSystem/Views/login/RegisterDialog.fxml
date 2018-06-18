@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@RegDialog.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.login.RegisterDialogController">
    <children>
       <Label fx:id="headImg" layoutX="42.0" layoutY="126.0" prefHeight="96.0" prefWidth="96.0" />
@@ -51,7 +50,7 @@
             </HBox>
          </children>
       </VBox>
-      <JFXButton layoutX="196.0" layoutY="335.0" onMouseClicked="#onReguButtonClicked" prefWidth="70.0" text="注册" />
-      <JFXButton layoutX="335.0" layoutY="335.0" onMouseClicked="#onQuitButtonClicked" prefWidth="70.0" text="退出" />
+      <JFXButton fx:id="enterButton" layoutX="196.0" layoutY="335.0" onMouseClicked="#onRegButtonClicked" prefWidth="70.0" text="注册" />
+      <JFXButton fx:id="regButton" layoutX="335.0" layoutY="335.0" onMouseClicked="#onQuitButtonClicked" prefWidth="70.0" text="退出" />
    </children>
 </AnchorPane>

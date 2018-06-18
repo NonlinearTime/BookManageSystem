@@ -9,7 +9,7 @@ public class Client extends NetworkConnection {
 
     public Client(String ip, int port, Consumer<Serializable> onReceiveCallback) {
         super(onReceiveCallback);
-        this.ip = ip;;
+        this.ip = ip;
         this.port = port;
     }
 

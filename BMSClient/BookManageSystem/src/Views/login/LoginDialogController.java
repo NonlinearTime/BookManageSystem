@@ -1,11 +1,17 @@
 package Views.login;
 
+import Conponent.Connector;
+import Conponent.MessageData;
+import Conponent.MessageType;
 import StageController.ControlledStage;
 import StageController.StageController;
 import com.jfoenix.controls.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.paint.Paint;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import sample.Main;
 
 import java.awt.*;
@@ -51,10 +57,17 @@ public class LoginDialogController implements ControlledStage, Initializable {
 
     @FXML
     void onLoginButtonClicked() {
-        if (readerCheckBox.isSelected() && !adminCheckBox.isSelected())
-            loginDialogController.setStage(Main.UserViewID, Main.LoginDialogID);
-        else if (adminCheckBox.isSelected() && !readerCheckBox.isSelected())
-            loginDialogController.setStage(Main.ManagerViewID,Main.LoginDialogID);
+        MessageData messageData = new MessageData();
+        messageData.getData().add(userText.getText().trim());
+        messageData.getData().add(pwdText.getText().trim());
+        if (readerCheckBox.isSelected() && !adminCheckBox.isSelected()) {
+            messageData.setMessageType(MessageType.userLoginReq);
+            Connector.getInstance().send(messageData);
+        }
+        else if (adminCheckBox.isSelected() && !readerCheckBox.isSelected()) {
+            messageData.setMessageType(MessageType.adminLoginReq);
+            Connector.getInstance().send(messageData);
+        } else popHintDialog("Hello, 罗海旻 ^_^");
     }
 
     @FXML
@@ -81,5 +94,22 @@ public class LoginDialogController implements ControlledStage, Initializable {
     void onFndBackButtonClicked() {
         System.out.println("Find pwd");
         loginDialogController.setStage(Main.LoginFndViewID);
+    }
+
+    public void popHintDialog(String hintContent) {
+        JFXAlert alert = new JFXAlert((Stage) loginButton.getScene().getWindow());
+        alert.initModality(Modality.APPLICATION_MODAL);
+        alert.setOverlayClose(false);
+
+        JFXDialogLayout layout = new JFXDialogLayout();
+        layout.setHeading(new javafx.scene.control.Label("提示"));
+        layout.setBody(new Label(hintContent));
+
+        JFXButton closeButton = new JFXButton("确定");
+        closeButton.setOnAction(event -> alert.hideWithAnimation());
+        layout.setActions(closeButton);
+        alert.setContent(layout);
+
+        alert.show();
     }
 }
