@@ -5,14 +5,70 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/Connector.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Conponent/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$30.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$31.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$31.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$33.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$33.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$34.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$35.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$35.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$36.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/DataContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/DataContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/DetailDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/DetailDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/DetailDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/DetailDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController$11.class" afterDir="false" />
@@ -53,14 +109,19 @@
       <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Conponent/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/Connector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Conponent/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/administrator/ManagerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/data/DataContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/data/DataContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/user/ProfileView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/ProfileView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/user/ProfileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/ProfileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/DetailDialog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/DetailDialog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/DetailDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/DetailDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/user/UserView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/user/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BMSServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/DataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/DataAccess.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Network/SocketThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Network/SocketThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/DataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/DataAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Network/SocketThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Network/SocketThread.java" afterDir="false" />
     </list>
@@ -103,13 +164,6 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="BookDB: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="BookDB: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Administrator: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -164,11 +218,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+            <state relative-caret-position="5076">
+              <caret line="241" column="46" selection-start-line="241" selection-start-column="46" selection-end-line="241" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerViewController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="426" column="25" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#18455#18984#0" expanded="true" />
+                <element signature="e#18983#18984#0" expanded="true" />
+                <element signature="e#19117#19433#0" expanded="true" />
+                <element signature="e#19432#19433#0" expanded="true" />
+                <element signature="e#19568#19886#0" expanded="true" />
+                <element signature="e#19885#19886#0" expanded="true" />
+                <element signature="e#20021#20339#0" expanded="true" />
+                <element signature="e#20338#20339#0" expanded="true" />
+                <element signature="e#20476#20796#0" expanded="true" />
+                <element signature="e#20795#20796#0" expanded="true" />
+                <element signature="e#20928#21245#0" expanded="true" />
+                <element signature="e#21244#21245#0" expanded="true" />
+                <element signature="e#21378#21695#0" expanded="true" />
+                <element signature="e#21694#21695#0" expanded="true" />
+                <element signature="e#21860#22216#0" expanded="true" />
+                <element signature="e#22215#22216#0" expanded="true" />
+                <element signature="e#22249#25007#0" expanded="true" />
+                <element signature="e#22605#24660#0" expanded="true" />
+                <element signature="e#24659#24660#0" expanded="true" />
+                <element signature="e#24727#24952#0" expanded="true" />
+                <element signature="e#24951#24952#0" expanded="true" />
+                <element signature="e#25006#25007#0" expanded="true" />
+                <element signature="e#25739#26057#0" expanded="true" />
+                <element signature="e#26056#26057#0" expanded="true" />
+                <element signature="e#26190#26508#0" expanded="true" />
+                <element signature="e#26507#26508#0" expanded="true" />
+                <element signature="e#26643#26961#0" expanded="true" />
+                <element signature="e#26960#26961#0" expanded="true" />
+                <element signature="e#27096#27414#0" expanded="true" />
+                <element signature="e#27413#27414#0" expanded="true" />
+                <element signature="e#27579#27935#0" expanded="true" />
+                <element signature="e#27934#27935#0" expanded="true" />
+                <element signature="e#27968#29069#0" expanded="true" />
+                <element signature="e#28324#28722#0" expanded="true" />
+                <element signature="e#28721#28722#0" expanded="true" />
+                <element signature="e#28789#29014#0" expanded="true" />
+                <element signature="e#29013#29014#0" expanded="true" />
+                <element signature="e#29068#29069#0" expanded="true" />
+                <element signature="e#29750#30066#0" expanded="true" />
+                <element signature="e#30065#30066#0" expanded="true" />
+                <element signature="e#30199#30517#0" expanded="true" />
+                <element signature="e#30516#30517#0" expanded="true" />
+                <element signature="e#30650#30966#0" expanded="true" />
+                <element signature="e#30965#30966#0" expanded="true" />
+                <element signature="e#31103#31422#0" expanded="true" />
+                <element signature="e#31421#31422#0" expanded="true" />
+                <element signature="e#31557#31875#0" expanded="true" />
+                <element signature="e#31874#31875#0" expanded="true" />
+                <element signature="e#32040#32396#0" expanded="true" />
+                <element signature="e#32395#32396#0" expanded="true" />
+                <element signature="e#32429#33733#0" expanded="true" />
+                <element signature="e#32785#33386#0" expanded="true" />
+                <element signature="e#33385#33386#0" expanded="true" />
+                <element signature="e#33453#33678#0" expanded="true" />
+                <element signature="e#33677#33678#0" expanded="true" />
+                <element signature="e#33732#33733#0" expanded="true" />
+                <element signature="e#34437#34753#0" expanded="true" />
+                <element signature="e#34752#34753#0" expanded="true" />
+                <element signature="e#34886#35204#0" expanded="true" />
+                <element signature="e#35203#35204#0" expanded="true" />
+                <element signature="e#35337#35655#0" expanded="true" />
+                <element signature="e#35654#35655#0" expanded="true" />
+                <element signature="e#35792#36110#0" expanded="true" />
+                <element signature="e#36109#36110#0" expanded="true" />
+                <element signature="e#36247#36565#0" expanded="true" />
+                <element signature="e#36564#36565#0" expanded="true" />
+                <element signature="e#36730#37086#0" expanded="true" />
+                <element signature="e#37085#37086#0" expanded="true" />
+                <element signature="e#37119#38220#0" expanded="true" />
+                <element signature="e#37475#37873#0" expanded="true" />
+                <element signature="e#37872#37873#0" expanded="true" />
+                <element signature="e#37940#38165#0" expanded="true" />
+                <element signature="e#38164#38165#0" expanded="true" />
+                <element signature="e#38219#38220#0" expanded="true" />
+                <element signature="e#38930#39246#0" expanded="true" />
+                <element signature="e#39245#39246#0" expanded="true" />
+                <element signature="e#39383#39701#0" expanded="true" />
+                <element signature="e#39700#39701#0" expanded="true" />
+                <element signature="e#39832#40151#0" expanded="true" />
+                <element signature="e#40150#40151#0" expanded="true" />
+                <element signature="e#40280#40598#0" expanded="true" />
+                <element signature="e#40597#40598#0" expanded="true" />
+                <element signature="e#40723#41040#0" expanded="true" />
+                <element signature="e#41039#41040#0" expanded="true" />
+                <element signature="e#41167#41485#0" expanded="true" />
+                <element signature="e#41484#41485#0" expanded="true" />
+                <element signature="e#41650#42006#0" expanded="true" />
+                <element signature="e#42005#42006#0" expanded="true" />
+                <element signature="e#42039#43374#0" expanded="true" />
+                <element signature="e#42395#42793#0" expanded="true" />
+                <element signature="e#42792#42793#0" expanded="true" />
+                <element signature="e#42861#43086#0" expanded="true" />
+                <element signature="e#43085#43086#0" expanded="true" />
+                <element signature="e#43373#43374#0" expanded="true" />
+                <element signature="e#43919#43920#0" expanded="true" />
+                <element signature="e#43961#43962#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterDialogController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/login/RegisterDialogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,17 +353,8 @@
       <file leaf-file-name="LoginDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User" pinned="false" current-in-tab="false">
-        <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/User">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="1425">
+              <caret line="107" column="52" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -206,21 +371,8 @@
       <file leaf-file-name="MessageType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conponent/MessageType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/user/ProfileView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="312">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -228,22 +380,35 @@
       <file leaf-file-name="UserViewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="626" selection-start-line="626" selection-end-line="626" />
+            <state relative-caret-position="338">
+              <caret line="146" column="21" lean-forward="true" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#40842#40843#0" expanded="true" />
+                <element signature="e#40880#40881#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAltpwdDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java">
+      <file leaf-file-name="DetailDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/user/DetailDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="122" column="44" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
+            <state relative-caret-position="385">
+              <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
               <folding>
-                <element signature="method#popHintDialog#0;class#UserAltpwdDialog#0" />
-                <element signature="e#3487#3488#0" expanded="true" />
-                <element signature="e#3530#3531#0" expanded="true" />
+                <element signature="e#1715#1716#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book" pinned="false" current-in-tab="false">
+        <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/Book">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -251,16 +416,13 @@
       <file leaf-file-name="DataContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/data/DataContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="321">
+              <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperationDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/user/OperationDialog.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -299,6 +461,7 @@
       <find>quitButton</find>
       <find>messageData.getData()</find>
       <find>setText(&quot;&quot;)</find>
+      <find>OnRen</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -330,7 +493,6 @@
         <option value="$PROJECT_DIR$/src/Views/user/OperationDialog.fxml" />
         <option value="$PROJECT_DIR$/src/Views/user/OperationDialog.java" />
         <option value="$PROJECT_DIR$/src/Views/user/DetailDialog.fxml" />
-        <option value="$PROJECT_DIR$/src/Views/user/DetailDialog.java" />
         <option value="$PROJECT_DIR$/src/StageController/StageController.java" />
         <option value="$PROJECT_DIR$/src/Views/user/ProfileView.fxml" />
         <option value="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.fxml" />
@@ -346,7 +508,6 @@
         <option value="$PROJECT_DIR$/src/Views/login/RegDialog.css" />
         <option value="$PROJECT_DIR$/src/Views/login/FndBkPwd.css" />
         <option value="$PROJECT_DIR$/src/Network/Server.java" />
-        <option value="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" />
         <option value="$PROJECT_DIR$/src/Views/Conponent/ListItem.java" />
         <option value="$PROJECT_DIR$/src/Network/Client.java" />
         <option value="$PROJECT_DIR$/src/Conponent/Email.java" />
@@ -355,14 +516,16 @@
         <option value="$PROJECT_DIR$/src/Network/NetworkConnection.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/Views/login/LoginDialogController.java" />
-        <option value="$PROJECT_DIR$/src/Views/login/RegisterDialogController.java" />
         <option value="$PROJECT_DIR$/src/Views/login/FndBkPwdController.java" />
         <option value="$PROJECT_DIR$/src/Views/user/ProfileView.java" />
-        <option value="$PROJECT_DIR$/src/Views/data/DataContainer.java" />
-        <option value="$PROJECT_DIR$/src/Views/user/UserViewController.java" />
-        <option value="$PROJECT_DIR$/src/Conponent/MessageType.java" />
         <option value="$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java" />
+        <option value="$PROJECT_DIR$/src/Conponent/MessageType.java" />
+        <option value="$PROJECT_DIR$/src/Views/data/DataContainer.java" />
+        <option value="$PROJECT_DIR$/src/Views/user/DetailDialog.java" />
+        <option value="$PROJECT_DIR$/src/Views/login/RegisterDialogController.java" />
         <option value="$PROJECT_DIR$/src/Conponent/Connector.java" />
+        <option value="$PROJECT_DIR$/src/Views/user/UserViewController.java" />
+        <option value="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" />
       </list>
     </option>
   </component>
@@ -377,9 +540,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-97" />
     <option name="y" value="21" />
-    <option name="width" value="1380" />
-    <option name="height" value="1012" />
+    <option name="width" value="1390" />
+    <option name="height" value="1006" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -392,6 +556,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -485,9 +652,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -646,45 +810,48 @@
       <workItem from="1529205336450" duration="764000" />
       <workItem from="1529218937516" duration="13357000" />
       <workItem from="1529247776638" duration="12117000" />
-      <workItem from="1529287393664" duration="17575000" />
+      <workItem from="1529287393664" duration="17735000" />
+      <workItem from="1529326656791" duration="15847000" />
+      <workItem from="1529367660603" duration="9661000" />
+      <workItem from="1529399182917" duration="15372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181327000" />
+    <option name="totallyTimeSpent" value="222367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32921812" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.102604166" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.32921812" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.30555555" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.30555555" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32959184" />
-      <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32921812" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32921812" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.072916664" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" id="JetGradle" order="6" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Changes" order="8" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Profiler" order="10" />
@@ -743,13 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/Book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -847,13 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9568">
-          <caret line="440" column="128" selection-start-line="440" selection-start-column="125" selection-end-line="440" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/Conponent/ListItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -865,13 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/user/DetailDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -940,13 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/FineReg">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Conponent/MessageData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -992,30 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/login/FndBkPwdDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/login/RegisterDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/login/RegisterDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/login/FndBkPwdController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1027,39 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/user/OperationDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/user/ProfileView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="936">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="626" selection-start-line="626" selection-end-line="626" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conponent/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1070,22 +1156,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2496">
+          <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/user/UserAltpwdDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
+        <state relative-caret-position="2184">
           <caret line="122" column="44" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
           <folding>
             <element signature="method#popHintDialog#0;class#UserAltpwdDialog#0" />
-            <element signature="e#3487#3488#0" expanded="true" />
-            <element signature="e#3530#3531#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/data/DataContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/RentRecord">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1096,12 +1187,207 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
+    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/FineReg">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/Book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/data/DataContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+        <state relative-caret-position="321">
+          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/DetailDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+          <folding>
+            <element signature="e#1715#1716#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Conponent.MessageType">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Conponent.MessageType</OriginalElement>
+          <nodes>
+            <node x="" y="">Conponent.MessageType</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="63.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/login/LoginDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="107" column="52" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conponent/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/login/RegisterDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5076">
+          <caret line="241" column="46" selection-start-line="241" selection-start-column="46" selection-end-line="241" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="146" column="21" lean-forward="true" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#40842#40843#0" expanded="true" />
+            <element signature="e#40880#40881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="426" column="25" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#18455#18984#0" expanded="true" />
+            <element signature="e#18983#18984#0" expanded="true" />
+            <element signature="e#19117#19433#0" expanded="true" />
+            <element signature="e#19432#19433#0" expanded="true" />
+            <element signature="e#19568#19886#0" expanded="true" />
+            <element signature="e#19885#19886#0" expanded="true" />
+            <element signature="e#20021#20339#0" expanded="true" />
+            <element signature="e#20338#20339#0" expanded="true" />
+            <element signature="e#20476#20796#0" expanded="true" />
+            <element signature="e#20795#20796#0" expanded="true" />
+            <element signature="e#20928#21245#0" expanded="true" />
+            <element signature="e#21244#21245#0" expanded="true" />
+            <element signature="e#21378#21695#0" expanded="true" />
+            <element signature="e#21694#21695#0" expanded="true" />
+            <element signature="e#21860#22216#0" expanded="true" />
+            <element signature="e#22215#22216#0" expanded="true" />
+            <element signature="e#22249#25007#0" expanded="true" />
+            <element signature="e#22605#24660#0" expanded="true" />
+            <element signature="e#24659#24660#0" expanded="true" />
+            <element signature="e#24727#24952#0" expanded="true" />
+            <element signature="e#24951#24952#0" expanded="true" />
+            <element signature="e#25006#25007#0" expanded="true" />
+            <element signature="e#25739#26057#0" expanded="true" />
+            <element signature="e#26056#26057#0" expanded="true" />
+            <element signature="e#26190#26508#0" expanded="true" />
+            <element signature="e#26507#26508#0" expanded="true" />
+            <element signature="e#26643#26961#0" expanded="true" />
+            <element signature="e#26960#26961#0" expanded="true" />
+            <element signature="e#27096#27414#0" expanded="true" />
+            <element signature="e#27413#27414#0" expanded="true" />
+            <element signature="e#27579#27935#0" expanded="true" />
+            <element signature="e#27934#27935#0" expanded="true" />
+            <element signature="e#27968#29069#0" expanded="true" />
+            <element signature="e#28324#28722#0" expanded="true" />
+            <element signature="e#28721#28722#0" expanded="true" />
+            <element signature="e#28789#29014#0" expanded="true" />
+            <element signature="e#29013#29014#0" expanded="true" />
+            <element signature="e#29068#29069#0" expanded="true" />
+            <element signature="e#29750#30066#0" expanded="true" />
+            <element signature="e#30065#30066#0" expanded="true" />
+            <element signature="e#30199#30517#0" expanded="true" />
+            <element signature="e#30516#30517#0" expanded="true" />
+            <element signature="e#30650#30966#0" expanded="true" />
+            <element signature="e#30965#30966#0" expanded="true" />
+            <element signature="e#31103#31422#0" expanded="true" />
+            <element signature="e#31421#31422#0" expanded="true" />
+            <element signature="e#31557#31875#0" expanded="true" />
+            <element signature="e#31874#31875#0" expanded="true" />
+            <element signature="e#32040#32396#0" expanded="true" />
+            <element signature="e#32395#32396#0" expanded="true" />
+            <element signature="e#32429#33733#0" expanded="true" />
+            <element signature="e#32785#33386#0" expanded="true" />
+            <element signature="e#33385#33386#0" expanded="true" />
+            <element signature="e#33453#33678#0" expanded="true" />
+            <element signature="e#33677#33678#0" expanded="true" />
+            <element signature="e#33732#33733#0" expanded="true" />
+            <element signature="e#34437#34753#0" expanded="true" />
+            <element signature="e#34752#34753#0" expanded="true" />
+            <element signature="e#34886#35204#0" expanded="true" />
+            <element signature="e#35203#35204#0" expanded="true" />
+            <element signature="e#35337#35655#0" expanded="true" />
+            <element signature="e#35654#35655#0" expanded="true" />
+            <element signature="e#35792#36110#0" expanded="true" />
+            <element signature="e#36109#36110#0" expanded="true" />
+            <element signature="e#36247#36565#0" expanded="true" />
+            <element signature="e#36564#36565#0" expanded="true" />
+            <element signature="e#36730#37086#0" expanded="true" />
+            <element signature="e#37085#37086#0" expanded="true" />
+            <element signature="e#37119#38220#0" expanded="true" />
+            <element signature="e#37475#37873#0" expanded="true" />
+            <element signature="e#37872#37873#0" expanded="true" />
+            <element signature="e#37940#38165#0" expanded="true" />
+            <element signature="e#38164#38165#0" expanded="true" />
+            <element signature="e#38219#38220#0" expanded="true" />
+            <element signature="e#38930#39246#0" expanded="true" />
+            <element signature="e#39245#39246#0" expanded="true" />
+            <element signature="e#39383#39701#0" expanded="true" />
+            <element signature="e#39700#39701#0" expanded="true" />
+            <element signature="e#39832#40151#0" expanded="true" />
+            <element signature="e#40150#40151#0" expanded="true" />
+            <element signature="e#40280#40598#0" expanded="true" />
+            <element signature="e#40597#40598#0" expanded="true" />
+            <element signature="e#40723#41040#0" expanded="true" />
+            <element signature="e#41039#41040#0" expanded="true" />
+            <element signature="e#41167#41485#0" expanded="true" />
+            <element signature="e#41484#41485#0" expanded="true" />
+            <element signature="e#41650#42006#0" expanded="true" />
+            <element signature="e#42005#42006#0" expanded="true" />
+            <element signature="e#42039#43374#0" expanded="true" />
+            <element signature="e#42395#42793#0" expanded="true" />
+            <element signature="e#42792#42793#0" expanded="true" />
+            <element signature="e#42861#43086#0" expanded="true" />
+            <element signature="e#43085#43086#0" expanded="true" />
+            <element signature="e#43373#43374#0" expanded="true" />
+            <element signature="e#43919#43920#0" expanded="true" />
+            <element signature="e#43961#43962#0" expanded="true" />
           </folding>
         </state>
       </provider>

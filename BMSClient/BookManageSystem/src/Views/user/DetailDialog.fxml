@@ -95,7 +95,7 @@
                   </Label>
                </children>
             </HBox>
-            <JFXButton fx:id="enterBtn" text="确定" />
+            <JFXButton fx:id="enterBtn" onMouseClicked="#onEnterButtonClicked" text="确定" />
          </children>
       </VBox>
       <Label fx:id="headImg" layoutX="268.0" layoutY="28.0" prefHeight="64.0" prefWidth="64.0" />

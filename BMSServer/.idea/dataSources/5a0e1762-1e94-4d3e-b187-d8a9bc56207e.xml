@@ -1285,38 +1285,56 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="238" name="BookID">
+    <column id="298" parent="238" name="RentID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="238" name="UserID">
+    <column id="299" parent="238" name="BookID">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="238" name="RetDate">
+    <column id="300" parent="238" name="UserID">
       <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="238" name="RetDate">
+      <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="301" parent="238" name="BookID">
+    <index id="302" parent="238" name="RentID">
+      <ColNames>RentID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="303" parent="238" name="BookID">
       <ColNames>BookID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="302" parent="238" name="UserID">
+    <index id="304" parent="238" name="UserID">
       <ColNames>UserID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="303" parent="238" name="PRIMARY">
+    <key id="305" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>RetID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="304" parent="238" name="ReturnRecord_ibfk_1">
+    <foreign-key id="306" parent="238" name="ReturnRecord_ibfk_1">
+      <ColNames>RentID</ColNames>
+      <RefSchemaName>BookDB</RefSchemaName>
+      <RefTableName>BorrowReg</RefTableName>
+      <RefColNames>rID</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="307" parent="238" name="ReturnRecord_ibfk_2">
       <ColNames>BookID</ColNames>
       <RefSchemaName>BookDB</RefSchemaName>
       <RefTableName>Book</RefTableName>
@@ -1324,7 +1342,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="305" parent="238" name="ReturnRecord_ibfk_2">
+    <foreign-key id="308" parent="238" name="ReturnRecord_ibfk_3">
       <ColNames>UserID</ColNames>
       <RefSchemaName>BookDB</RefSchemaName>
       <RefTableName>User</RefTableName>
@@ -1332,51 +1350,51 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="306" parent="239" name="uID">
+    <column id="309" parent="239" name="uID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="239" name="uName">
+    <column id="310" parent="239" name="uName">
       <Position>2</Position>
       <DataType>char(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="239" name="uPwd">
+    <column id="311" parent="239" name="uPwd">
       <Position>3</Position>
       <DataType>char(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="239" name="email">
+    <column id="312" parent="239" name="email">
       <Position>4</Position>
       <DataType>char(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="239" name="uTele">
+    <column id="313" parent="239" name="uTele">
       <Position>5</Position>
       <DataType>char(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="239" name="uType">
+    <column id="314" parent="239" name="uType">
       <Position>6</Position>
       <DataType>char(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="239" name="rTime">
+    <column id="315" parent="239" name="rTime">
       <Position>7</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="313" parent="239" name="PRIMARY">
+    <key id="316" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uID</ColNames>
       <Primary>1</Primary>

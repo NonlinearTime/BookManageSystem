@@ -7,6 +7,8 @@ import Views.user.UserViewController;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.cells.editors.base.JFXTreeTableCell;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -18,6 +20,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableCell;
 import javafx.scene.control.TreeTableColumn;
@@ -27,10 +30,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.util.Callback;
+import javafx.util.Duration;
 import sample.Main;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
@@ -78,6 +84,12 @@ public class ManagerViewController implements ControlledStage, Initializable {
 
     @FXML
     private AnchorPane readerTab;
+
+    @FXML
+    private Label welcomeLabel;
+
+    @FXML
+    private Label timeLabel;
 
     class BookTableItem extends RecursiveTreeObject<BookTableItem> {
         StringProperty bookID, bookName, bookType, bookAuthor, bookPub, bookNum;
@@ -403,6 +415,16 @@ public class ManagerViewController implements ControlledStage, Initializable {
         ListItem listItem;
         double listViewHeight = 0;
         managerItemListView.setItems(managerListView);
+
+        EventHandler<javafx.event.ActionEvent> eventHandler = e -> {
+            Date date = new Date();
+            SimpleDateFormat dataformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            timeLabel.setText(dataformat.format(date));
+        };
+
+        Timeline animation = new Timeline(new KeyFrame(Duration.millis(1000), eventHandler));
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play();
 
         try {
             listItem = new ListItem("/home/haines/IdeaProjects/BookManageSystem/BMSClient/BookManageSystem/src/pictures/rent.png","借阅审核",20);
@@ -898,6 +920,10 @@ public class ManagerViewController implements ControlledStage, Initializable {
     public void onAltpwdButtonClicked() {
         managerViewController.getStage(Main.UserAltpwdDialogID).setTitle("修改密码");
         managerViewController.setStage(Main.UserAltpwdDialogID);
+    }
+
+    public void setWelcomeLabel(String text) {
+        welcomeLabel.setText(text);
     }
 
     public void onQuitButtonClicked() {

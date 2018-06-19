@@ -6,6 +6,7 @@ import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import sample.Main;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -74,4 +75,8 @@ public class DetailDialog implements ControlledStage, Initializable {
     public Label getLabel10() {return label10;}
     public Label getLabel11() {return label11;}
     public Label getLabel12() {return label12;}
+
+    public void onEnterButtonClicked() {
+        stageController.closeStage(Main.UserDetailDialogID);
+    }
 }

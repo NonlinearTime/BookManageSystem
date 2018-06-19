@@ -1,5 +1,6 @@
 package Views.user;
 
+import Conponent.Connector;
 import Conponent.MessageData;
 import Conponent.MessageType;
 import StageController.ControlledStage;
@@ -9,8 +10,9 @@ import Views.data.DataContainer;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.cells.editors.base.JFXTreeTableCell;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Platform;
-import javafx.beans.InvalidationListener;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -19,36 +21,32 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
-import javafx.geometry.Pos;
-import javafx.scene.control.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
-import javafx.scene.effect.DropShadow;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeTableCell;
+import javafx.scene.control.TreeTableColumn;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
-import javafx.scene.text.TextAlignment;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
+import javafx.util.Duration;
 import sample.Main;
 
-import javax.swing.text.DefaultEditorKit;
 import javax.xml.crypto.Data;
-import java.awt.*;
-import java.awt.print.Book;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.sql.Time;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.ListIterator;
-import java.util.ResourceBundle;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class UserViewController implements ControlledStage, Initializable {
     private StageController userViewController;
@@ -57,6 +55,8 @@ public class UserViewController implements ControlledStage, Initializable {
     private ObservableList<BookTableItem> books =  FXCollections.observableArrayList();
     private ObservableList<RentTableItem> rents =  FXCollections.observableArrayList();
     private ObservableList<TimeTableItem> fines =  FXCollections.observableArrayList();
+    private Date date = new Date();
+    private Timestamp timestamp;
 
     @FXML
     private AnchorPane BookTab;
@@ -91,6 +91,42 @@ public class UserViewController implements ControlledStage, Initializable {
     @FXML
     private JFXButton altpwdButton;
 
+    @FXML
+    private JFXTextField bookIDField;
+
+    @FXML
+    private JFXTextField bookNameField;
+
+    @FXML
+    private JFXComboBox<String> bookClassComboList;
+
+    @FXML
+    private JFXTextField authorTield;
+
+    @FXML
+    private JFXTextField pubField;
+
+    @FXML
+    private JFXButton bookSearchButton;
+
+    @FXML
+    private JFXTextField rentIdField;
+
+    @FXML
+    private JFXTextField rentBookIDField;
+
+    @FXML
+    private JFXTextField fineIDField;
+
+    @FXML
+    private JFXTextField fineRentIDField;
+
+    @FXML
+    private Label welcomeLabel;
+
+    @FXML
+    private Label timeLabel;
+
 
 
     private ObservableList<ListItem> listView = FXCollections.observableArrayList();
@@ -102,17 +138,23 @@ public class UserViewController implements ControlledStage, Initializable {
     }
 
     class BookTableItem extends RecursiveTreeObject<BookTableItem> {
-        StringProperty  bookID, bookName, bookType, bookAuthor, bookPub, bookNum;
+        StringProperty  bookID = new SimpleStringProperty(),
+                        bookName = new SimpleStringProperty(),
+                        bookType = new SimpleStringProperty(),
+                        bookAuthor = new SimpleStringProperty(),
+                        bookPub = new SimpleStringProperty(),
+                        bookNum = new SimpleStringProperty();
         HBox btnHBox;
         JFXButton detailBtn;
         JFXButton opBtn;
         public BookTableItem(String bookID, String bookName, String bookType, String bookAuthor, String bookPub, String bookNum) {
-            this.bookID = new SimpleStringProperty(bookID);
-            this.bookName = new SimpleStringProperty(bookName);
-            this.bookType = new SimpleStringProperty(bookType);
-            this.bookAuthor = new SimpleStringProperty(bookAuthor);
-            this.bookNum = new SimpleStringProperty(bookNum);
-            this.bookPub = new SimpleStringProperty(bookPub);
+            this();
+            this.bookID.setValue(bookID);
+            this.bookName.setValue(bookName);
+            this.bookType.setValue(bookType);
+            this.bookAuthor.setValue(bookAuthor);
+            this.bookNum.setValue(bookNum);
+            this.bookPub.setValue(bookPub);
         }
         public BookTableItem() {
             btnHBox = new HBox();
@@ -132,7 +174,7 @@ public class UserViewController implements ControlledStage, Initializable {
         public void SetDetailButtonVisible(boolean visible) {
             detailBtn.setVisible(visible);
         }
-        public void SetOperatieButtonVisible(boolean visible) {
+        public void SetOperationButtonVisible(boolean visible) {
             opBtn.setVisible(visible);
         }
         public HBox getGraphic() {
@@ -164,13 +206,13 @@ public class UserViewController implements ControlledStage, Initializable {
     }
 
     class RentTableItem extends RecursiveTreeObject<RentTableItem> {
-        StringProperty  rentID, userID, bookID, rentDate, backDate, isBack;
+        StringProperty  rentID, bookID, bookName, rentDate, backDate, isBack;
         HBox btnHBox;
         JFXButton detailBtn;
         JFXButton opBtn;
-        public RentTableItem(String rentID, String userID, String bookID, String rentDate, String backDate, String isBack) {
+        public RentTableItem(String rentID, String bookID, String bookName, String rentDate, String backDate, String isBack) {
             this.rentID = new SimpleStringProperty(rentID);
-            this.userID = new SimpleStringProperty(userID);
+            this.bookName = new SimpleStringProperty(bookName);
             this.bookID = new SimpleStringProperty(bookID);
             this.rentDate = new SimpleStringProperty(rentDate);
             this.backDate = new SimpleStringProperty(backDate);
@@ -226,13 +268,13 @@ public class UserViewController implements ControlledStage, Initializable {
     }
 
     class TimeTableItem extends RecursiveTreeObject<TimeTableItem> {
-        StringProperty  fineID, userID, rentID, fineMount, fineDate, isSolved;
+        StringProperty  fineID, rentID, bookName, fineMount, fineDate, isSolved;
         HBox btnHBox;
         JFXButton detailBtn;
         JFXButton opBtn;
-        public TimeTableItem(String fineID, String userID, String rentID, String fineMount, String fineDate, String isSolved) {
+        public TimeTableItem(String fineID, String rentID, String bookName, String fineMount, String fineDate, String isSolved) {
             this.fineID = new SimpleStringProperty(fineID);
-            this.userID = new SimpleStringProperty(userID);
+            this.bookName = new SimpleStringProperty(bookName);
             this.rentID = new SimpleStringProperty(rentID);
             this.fineMount = new SimpleStringProperty(fineMount);
             this.fineDate = new SimpleStringProperty(fineDate);
@@ -252,6 +294,7 @@ public class UserViewController implements ControlledStage, Initializable {
             btnHBox.setAlignment(Pos.CENTER);
             btnHBox.setSpacing(10);
             btnHBox.setPrefHeight(30);
+
         }
         public void SetDetailButtonVisible(boolean visible) {
             detailBtn.setVisible(visible);
@@ -295,6 +338,16 @@ public class UserViewController implements ControlledStage, Initializable {
         ListItem listItem;
         double listViewHeight = 0;
         itemListView.setItems(listView);
+
+        EventHandler<javafx.event.ActionEvent> eventHandler = e -> {
+            Date date = new Date();
+            SimpleDateFormat dataformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            timeLabel.setText(dataformat.format(date));
+        };
+
+        Timeline animation = new Timeline(new KeyFrame(Duration.millis(1000), eventHandler));
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play();
 
         try {
             listItem = new ListItem("/home/haines/IdeaProjects/BookManageSystem/BMSClient/BookManageSystem/src/pictures/quill.png","书籍信息",20);
@@ -402,33 +455,44 @@ public class UserViewController implements ControlledStage, Initializable {
                         userViewController.getStage(Main.UserDetailDialogID).setTitle("书籍详情");
                         userViewController.setStage(Main.UserDetailDialogID);
                         DetailDialog detailDialogController = (DetailDialog) userViewController.getController(Main.UserDetailDialogID);
-                        detailDialogController.getLabel1().setText("书籍编号：" + books.get(cell.getIndex()).bookID.getValue());
-                        detailDialogController.getLabel2().setText("书籍名称：" + books.get(cell.getIndex()).bookName.getValue());
-                        detailDialogController.getLabel3().setText("书籍类别：" + books.get(cell.getIndex()).bookType.getValue());
-                        detailDialogController.getLabel4().setText("作者：" + books.get(cell.getIndex()).bookAuthor.getValue());
-                        detailDialogController.getLabel5().setText("出版社：" + books.get(cell.getIndex()).bookPub.getValue());
-                        detailDialogController.getLabel6().setText("出版时间：" + books.get(cell.getIndex()).bookID.getValue());
-                        detailDialogController.getLabel7().setText("馆藏数量：" + books.get(cell.getIndex()).bookID.getValue());
-                        detailDialogController.getLabel8().setText("在馆数量：" + books.get(cell.getIndex()).bookID.getValue());
-                        detailDialogController.getLabel9().setText("价格：" + books.get(cell.getIndex()).bookID.getValue());
-                        detailDialogController.getLabel10().setText("评分：" + books.get(cell.getIndex()).bookID.getValue());
-                        detailDialogController.getLabel11().setText("评论数量：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel12().setText("书籍编号：" + books.get(cell.getIndex()).bookID.getValue());
+                        detailDialogController.getLabel1().setText("书籍编号：" + DataContainer.books.get(cell.getIndex()).get(0));
+                        detailDialogController.getLabel2().setText("书籍名称：" + DataContainer.books.get(cell.getIndex()).get(1));
+                        detailDialogController.getLabel3().setText("书籍类别：" + DataContainer.books.get(cell.getIndex()).get(2));
+                        detailDialogController.getLabel4().setText("作者：" + DataContainer.books.get(cell.getIndex()).get(3));
+                        detailDialogController.getLabel5().setText("出版社：" + DataContainer.books.get(cell.getIndex()).get(4));
+                        detailDialogController.getLabel6().setText("出版时间：" + DataContainer.books.get(cell.getIndex()).get(5));
+                        detailDialogController.getLabel7().setText("馆藏数量：" + DataContainer.books.get(cell.getIndex()).get(6));
+                        detailDialogController.getLabel8().setText("在馆数量：" + DataContainer.books.get(cell.getIndex()).get(7));
+                        detailDialogController.getLabel9().setText("价格：" + DataContainer.books.get(cell.getIndex()).get(8));
+                        detailDialogController.getLabel10().setText("评分：" + DataContainer.books.get(cell.getIndex()).get(9));
+                        detailDialogController.getLabel11().setText("评论数量：" + DataContainer.books.get(cell.getIndex()).get(10));
                     }
                 });
                 cell.getBookItem().getOpBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of book!");
-
+                        if (Integer.valueOf(books.get(cell.getIndex()).bookNum.getValue()) == 0) {
+                            popHintDialog("该图书在馆数量为0，无法借阅！");
+                            return;
+                        }
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.rentReq);
+                        messageData.getData().add(books.get(cell.getIndex()).bookID.getValue());
+                        messageData.getData().add(DataContainer.profile.get(0));
+                        timestamp = DataContainer.getTimeStamp();
+                        System.out.println(timestamp);
+                        messageData.getData().add(timestamp.toString());
+                        timestamp = DataContainer.addTimesStamp(timestamp);
+                        System.out.println(timestamp);
+                        messageData.getData().add(timestamp.toString());
+                        Connector.getInstance().send(messageData);
+                        popHintDialog("提交借阅申请成功！");
                     }
                 });
                 return cell;
             }
         });
-
-        books.add(new BookTableItem("1","图书管理系统","工具书","lhm","hust","11"));
-        books.add(new BookTableItem("1","图书管理系统","工具书","lhm","hust","11"));
 
         bookTable.getColumns().setAll(bookID, bookName, bookType, bookAuthor, bookPub, bookNum, bookOp);
         bookTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
@@ -445,18 +509,18 @@ public class UserViewController implements ControlledStage, Initializable {
                 return param.getValue().getValue().rentID;
             }
         });
-        JFXTreeTableColumn<RentTableItem, String> userID = new JFXTreeTableColumn<>("用户编号");
-        userID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
-            @Override
-            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
-                return param.getValue().getValue().userID;
-            }
-        });
         JFXTreeTableColumn<RentTableItem, String> rBookID = new JFXTreeTableColumn<>("图书编号");
         rBookID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
             @Override
             public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
                 return param.getValue().getValue().bookID;
+            }
+        });
+        JFXTreeTableColumn<RentTableItem, String> rBookName = new JFXTreeTableColumn<>("图书名称");
+        rBookName.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
+                return param.getValue().getValue().bookName;
             }
         });
         JFXTreeTableColumn<RentTableItem, String> rentDate = new JFXTreeTableColumn<>("借阅日期");
@@ -498,22 +562,49 @@ public class UserViewController implements ControlledStage, Initializable {
                         System.out.println("I'm in rent!");
                         userViewController.getStage(Main.UserDetailDialogID).setTitle("借阅详情");
                         userViewController.setStage(Main.UserDetailDialogID);
+                        DetailDialog detailDialogController = (DetailDialog) userViewController.getController(Main.UserDetailDialogID);
+                        detailDialogController.getLabel1().setText("借阅编号：" + DataContainer.rents.get(cell.getIndex()).get(0));
+                        detailDialogController.getLabel2().setText("图书编号：" + DataContainer.rents.get(cell.getIndex()).get(1));
+                        detailDialogController.getLabel3().setText("图书名称：" + DataContainer.rents.get(cell.getIndex()).get(2));
+                        detailDialogController.getLabel4().setText("借阅日期：" + DataContainer.rents.get(cell.getIndex()).get(3));
+                        detailDialogController.getLabel5().setText("应还日期：" + DataContainer.rents.get(cell.getIndex()).get(4));
+                        detailDialogController.getLabel6().setText("是否归还：" + DataContainer.rents.get(cell.getIndex()).get(5));
+                        detailDialogController.getLabel7().setVisible(false);
+                        detailDialogController.getLabel8().setVisible(false);
+                        detailDialogController.getLabel9().setVisible(false);
+                        detailDialogController.getLabel10().setVisible(false);
+                        detailDialogController.getLabel11().setVisible(false);
+                        detailDialogController.getLabel12().setVisible(false);
                     }
                 });
                 cell.getRentItem().getOpBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
+
                         System.out.println("I'm out of rent!");
+                        System.out.println("I'm out of book!");
+
+                        if (Boolean.valueOf(rents.get(cell.getIndex()).isBack.getValue())) {
+                            popHintDialog("图书已归还，无需归还！");
+                            return;
+                        }
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.returnReq);
+                        messageData.getData().add(rents.get(cell.getIndex()).rentID.getValue());
+                        messageData.getData().add(rents.get(cell.getIndex()).bookID.getValue());
+                        messageData.getData().add(DataContainer.profile.get(0));
+                        timestamp = DataContainer.getTimeStamp();
+                        System.out.println(timestamp);
+                        messageData.getData().add(timestamp.toString());
+                        Connector.getInstance().send(messageData);
+                        popHintDialog("提交归还申请成功！");
                     }
                 });
                 return cell;
             }
         });
 
-        rents.add(new RentTableItem("1","lhm","2","2018","2019","未还"));
-        rents.add(new RentTableItem("1","lhm","工具书","lhm","hust","11"));
-
-        rentTable.getColumns().setAll(rentID, userID, rBookID, rentDate, backDate, isBack, rentOp);
+        rentTable.getColumns().setAll(rentID, rBookID, rBookName,rentDate, backDate, isBack, rentOp);
         rentTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
 
         final TreeItem<RentTableItem> rentRoot = new RecursiveTreeItem<>(rents, RecursiveTreeObject::getChildren);
@@ -530,18 +621,18 @@ public class UserViewController implements ControlledStage, Initializable {
                 return param.getValue().getValue().fineID;
             }
         });
-        JFXTreeTableColumn<TimeTableItem, String> fuserID = new JFXTreeTableColumn<>("用户编号");
-        fuserID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<TimeTableItem, String>, ObservableValue<String>>() {
-            @Override
-            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<TimeTableItem, String> param) {
-                return param.getValue().getValue().userID;
-            }
-        });
-        JFXTreeTableColumn<TimeTableItem, String> frentID = new JFXTreeTableColumn<>("借阅编号");
-        frentID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<TimeTableItem, String>, ObservableValue<String>>() {
+        JFXTreeTableColumn<TimeTableItem, String> fRentID = new JFXTreeTableColumn<>("借阅编号");
+        fRentID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<TimeTableItem, String>, ObservableValue<String>>() {
             @Override
             public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<TimeTableItem, String> param) {
                 return param.getValue().getValue().rentID;
+            }
+        });
+        JFXTreeTableColumn<TimeTableItem, String> fBookName = new JFXTreeTableColumn<>("借阅书籍");
+        fBookName.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<TimeTableItem, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<TimeTableItem, String> param) {
+                return param.getValue().getValue().bookName;
             }
         });
         JFXTreeTableColumn<TimeTableItem, String> fineMount = new JFXTreeTableColumn<>("罚款金额");
@@ -581,11 +672,23 @@ public class UserViewController implements ControlledStage, Initializable {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm in time!");
-                        DetailDialog detailDialog = (DetailDialog)userViewController.getController(Main.UserDetailDialogID);
-                        detailDialog.getLabel1().setText("lalalala");
+                        DetailDialog detailDialogController = (DetailDialog)userViewController.getController(Main.UserDetailDialogID);
 
                         userViewController.getStage(Main.UserDetailDialogID).setTitle("罚款详情");
                         userViewController.setStage(Main.UserDetailDialogID);
+
+                        detailDialogController.getLabel1().setText("罚款编号：" + DataContainer.fines.get(cell.getIndex()).get(0));
+                        detailDialogController.getLabel2().setText("借阅编号：" + DataContainer.fines.get(cell.getIndex()).get(1));
+                        detailDialogController.getLabel3().setText("图书名称：" + DataContainer.fines.get(cell.getIndex()).get(2));
+                        detailDialogController.getLabel4().setText("罚款金额：" + DataContainer.fines.get(cell.getIndex()).get(3));
+                        detailDialogController.getLabel5().setText("罚款日期：" + DataContainer.fines.get(cell.getIndex()).get(4));
+                        detailDialogController.getLabel6().setText("是否已缴：" + DataContainer.fines.get(cell.getIndex()).get(5));
+                        detailDialogController.getLabel7().setVisible(false);
+                        detailDialogController.getLabel8().setVisible(false);
+                        detailDialogController.getLabel9().setVisible(false);
+                        detailDialogController.getLabel10().setVisible(false);
+                        detailDialogController.getLabel11().setVisible(false);
+                        detailDialogController.getLabel12().setVisible(false);
 
                     }
                 });
@@ -593,21 +696,29 @@ public class UserViewController implements ControlledStage, Initializable {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of time!");
+                        if (Boolean.valueOf(fines.get(cell.getIndex()).isSolved.getValue())) {
+                            popHintDialog("罚款已缴清，无需缴纳！");
+                            return;
+                        }
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.fineReq);
+                        messageData.getData().add(fines.get(cell.getIndex()).fineID.getValue());
+                        Connector.getInstance().send(messageData);
+                        popHintDialog("提交缴纳罚款申请成功！");
                     }
                 });
                 return cell;
             }
         });
 
-        fines.add(new TimeTableItem("1","lhm","2","2018","2019","未还"));
-        fines.add(new TimeTableItem("1","lhm","2","lhm","hust","11"));
-
-        fineTable.getColumns().setAll(fineID, fuserID, frentID, fineMount, fineDate, isSolved, fineOp);
+        fineTable.getColumns().setAll(fineID, fRentID, fBookName, fineMount, fineDate, isSolved, fineOp);
         fineTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
 
         final TreeItem<TimeTableItem> fineRoot = new RecursiveTreeItem<>(fines, RecursiveTreeObject::getChildren);
         fineTable.setRoot(fineRoot);
         fineTable.setShowRoot(false);
+
+        setBookClassComboList();
     }
 
     public void onProfileButtonClicked() {
@@ -631,4 +742,139 @@ public class UserViewController implements ControlledStage, Initializable {
         userViewController.closeStage(Main.UserViewID);
     }
 
+    public void setBookClassComboList(ArrayList<String> items) {
+        for (String item: items) {
+            bookClassComboList.getItems().add(item);
+        }
+    }
+
+    private void setBookClassComboList() {
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlBTypeReq);
+        Connector.getInstance().send(messageData);
+    }
+
+    public void onBookSearchButtonCLicked() {
+        String sql = "select * from Book ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlBookID = bookIDField.getText().trim().equals("") ? "" : "bID = " + bookIDField.getText().trim();
+        String sqlBookName = bookNameField.getText().trim().equals("") ? "" : "bName = '" +  bookNameField.getText().trim() + "'";
+        String sqlBookClass = bookClassComboList.getEditor().getText().trim().equals("") ? "" : "bType = '" + bookClassComboList.getSelectionModel().getSelectedItem() + "'";
+        String sqlBookAuthor = authorTield.getText().trim().equals("") ? "" : "aName = '" + authorTield.getText().trim() + "'";
+        String sqlPublisher = pubField.getText().trim().equals("") ? "" : "pubName = '" + pubField.getText().trim() + "'";
+        System.out.println(bookClassComboList.getEditor().getText().trim());
+        if (!sqlBookID.equals("")) alter.add(sqlBookID);
+        if (!sqlBookName.equals("")) alter.add(sqlBookName);
+        if (!sqlBookClass.equals("")) alter.add(sqlBookClass);
+        if (!sqlBookAuthor.equals("")) alter.add(sqlBookAuthor);
+        if (!sqlPublisher.equals("")) alter.add(sqlPublisher);
+        if (alter.size() > 0) sql = "select * from Book where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlBookReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        books.clear();
+    }
+
+    public void addBookTableItem(ArrayList<String> book) {
+        assert book.size() >= 7;
+        books.add(new BookTableItem(book.get(0),book.get(1),book.get(2),book.get(3),book.get(4),book.get(7)));
+    }
+
+    public void addRentTableItem(ArrayList<String> rent) {
+        assert rent.size() >= 6;
+        rents.add(new RentTableItem(rent.get(0), rent.get(1), rent.get(2), rent.get(3), rent.get(4), rent.get(5)));
+    }
+
+    public void addFineTableItem(ArrayList<String> fine) {
+        assert fine.size() >= 6;
+        fines.add(new TimeTableItem(fine.get(0), fine.get(1), fine.get(2), fine.get(3), fine.get(4), fine.get(5)));
+    }
+
+    public void onRentSearchButtonClicked() {
+        String sql = "select * from BorrowReg ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlRentBookId = rentBookIDField.getText().trim().equals("") ? "" : "bID = " + rentBookIDField.getText().trim();
+        String sqlRentID = rentIdField.getText().trim().equals("") ? "" :  "rID = " + rentIdField.getText().trim();
+        System.out.println(bookClassComboList.getEditor().getText().trim());
+        if (!sqlRentID.equals("")) alter.add(sqlRentID);
+        if (!sqlRentBookId.equals("")) alter.add(sqlRentBookId);
+        if (alter.size() > 0) sql = "select * from BorrowReg where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlRentReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        rents.clear();
+    }
+
+    public void onFineSearchButtonClicked() {
+        String sql = "select * from FineReg ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlFineID = fineIDField.getText().trim().equals("") ? "" : "fID = " + fineIDField.getText().trim();
+        String sqlFineRentID = fineRentIDField.getText().trim().equals("") ? "" :  "rID = " + fineRentIDField.getText().trim();
+        System.out.println(bookClassComboList.getEditor().getText().trim());
+        if (!sqlFineID.equals("")) alter.add(sqlFineID);
+        if (!sqlFineRentID.equals("")) alter.add(sqlFineRentID);
+        if (alter.size() > 0) sql = "select * from FineReg where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlFineReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        fines.clear();
+    }
+
+    public void setWelcomeLabel(String text) {
+        welcomeLabel.setText(text);
+    }
+
+    public void popHintDialog(String hintContent) {
+        JFXAlert alert = new JFXAlert((Stage) itemListView.getScene().getWindow());
+        alert.initModality(Modality.APPLICATION_MODAL);
+        alert.setOverlayClose(false);
+
+        JFXDialogLayout layout = new JFXDialogLayout();
+        layout.setHeading(new javafx.scene.control.Label("提示"));
+        layout.setBody(new Label(hintContent));
+
+        JFXButton closeButton = new JFXButton("确定");
+        closeButton.setOnAction(event -> alert.hideWithAnimation());
+        layout.setActions(closeButton);
+        alert.setContent(layout);
+
+        alert.show();
+    }
 }

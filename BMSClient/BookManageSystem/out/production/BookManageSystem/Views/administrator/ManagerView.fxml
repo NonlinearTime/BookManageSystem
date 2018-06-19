@@ -18,14 +18,14 @@
    <children>
       <JFXToolbar fx:id="infoToolBar" layoutY="713.0" prefHeight="28.0" prefWidth="1221.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <left>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="181.0" text="欢迎你，xxx!" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <Label fx:id="welcomeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="181.0" text="欢迎你，xxx!" textAlignment="CENTER" BorderPane.alignment="CENTER">
                <font>
                   <Font name=".PingFang SC Medium" size="14.0" />
                </font>
             </Label>
          </left>
          <center>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="194.0" text="时间" textAlignment="CENTER" textOverrun="CLIP" BorderPane.alignment="CENTER">
+            <Label fx:id="timeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="194.0" text="时间" textAlignment="CENTER" textOverrun="CLIP" BorderPane.alignment="CENTER">
                <font>
                   <Font name=".PingFang SC Medium" size="14.0" />
                </font>

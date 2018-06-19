@@ -3,11 +3,13 @@ package Conponent;
 import Network.Client;
 import Network.Server;
 import StageController.StageController;
+import Views.administrator.ManagerViewController;
 import Views.data.DataContainer;
 import Views.login.FndBkPwdController;
 import Views.login.LoginDialogController;
 import Views.login.RegisterDialogController;
 import Views.user.UserAltpwdDialog;
+import Views.user.UserViewController;
 import javafx.application.Platform;
 import sample.Main;
 
@@ -25,6 +27,8 @@ import static Conponent.MessageData.*;
 import static Conponent.MessageType.regAdmit;
 
 import Conponent.MessageType;
+
+import javax.xml.crypto.Data;
 
 public class Connector {
     private Client client = new Client("127.0.0.1",8888,this::CallBack);
@@ -93,9 +97,67 @@ public class Connector {
             case MessageType.altDeny:
                 onAltDenyCallBack(messageData);
                 break;
+            case MessageType.sqlBookReq:
+                onSqlBookReqCallBack(messageData);
+                break;
+            case MessageType.sqlBTypeReq:
+                onSqlBTypeReqCallBack(messageData);
+                break;
+            case MessageType.sqlRentReq:
+                onSqlRentReqCallBack(messageData);
+                break;
+            case MessageType.sqlFineReq:
+                onSqlFineReqCallBack(messageData);
+                break;
             default:
                 break;
         }
+    }
+
+    private void onSqlFineReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> fines = messageData.getDataList();
+        DataContainer.fines = fines;
+        UserViewController userViewController = (UserViewController) stageController.getController(Main.UserViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> fine: fines) {
+                userViewController.addFineTableItem(fine);
+            }
+        });
+    }
+
+    private void onSqlRentReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> rents = messageData.getDataList();
+        DataContainer.rents = rents;
+        UserViewController userViewController = (UserViewController) stageController.getController(Main.UserViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> rent: rents) {
+                userViewController.addRentTableItem(rent);
+            }
+        });
+    }
+
+    private void onSqlBookReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> books = messageData.getDataList();
+        DataContainer.books = books;
+        UserViewController userViewController = (UserViewController) stageController.getController(Main.UserViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> book: books) {
+                userViewController.addBookTableItem(book);
+            }
+        });
+    }
+
+    private void onSqlBTypeReqCallBack(MessageData messageData) {
+        ArrayList<String> data = messageData.getData();
+        UserViewController userViewController = (UserViewController) stageController.getController(Main.UserViewID);
+        Platform.runLater(() -> {
+            userViewController.setBookClassComboList(data);
+        });
+    }
+
+    private void onSqlReqCallBack(MessageData messageData) {
+
+
     }
 
     private void onAltDenyCallBack(MessageData messageData) {
@@ -166,6 +228,8 @@ public class Connector {
         Platform.runLater(() -> {
             stageController.setStage(Main.UserViewID, Main.LoginDialogID);
             DataContainer.profile = messageData.getData();
+            UserViewController userViewController = (UserViewController) stageController.getController(Main.UserViewID);
+            userViewController.setWelcomeLabel("欢迎你，" + DataContainer.profile.get(1));
         });
     }
 
@@ -174,6 +238,9 @@ public class Connector {
         Platform.runLater(() -> {
             stageController.setStage(Main.ManagerViewID, Main.LoginDialogID);
             DataContainer.profile = messageData.getData();
+            ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+            managerViewController.setWelcomeLabel("欢迎你，" + DataContainer.profile.get(1));
+
         });
     }
 
