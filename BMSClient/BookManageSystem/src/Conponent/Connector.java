@@ -57,6 +57,7 @@ public class Connector {
 
     public void send(Serializable data) {
         try {
+            System.out.println("sending");
             client.send(data);
         } catch (IOException e) {
             e.printStackTrace();
@@ -103,15 +104,89 @@ public class Connector {
             case MessageType.sqlBTypeReq:
                 onSqlBTypeReqCallBack(messageData);
                 break;
+            case MessageType.sqlMTypeReq:
+                onSqlMTypeReqCallBack(messageData);
+                break;
             case MessageType.sqlRentReq:
                 onSqlRentReqCallBack(messageData);
                 break;
             case MessageType.sqlFineReq:
                 onSqlFineReqCallBack(messageData);
                 break;
+            case MessageType.sqlRentRecReq:
+                onSqlRentRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlReturnRecReq:
+                onSqlReturnRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlFineRecReq:
+                onSqlFineRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlBookRecReq:
+                onSqlBookRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlUserRecReq:
+                onSqlUserRecReqCallBack(messageData);
+                break;
             default:
                 break;
         }
+    }
+
+    private void onSqlUserRecReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> users = messageData.getDataList();
+        DataContainer.manageusers = users;
+        ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> user: users) {
+                managerViewController.addUserTableItem(user);
+            }
+        });
+    }
+
+    private void onSqlBookRecReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> books = messageData.getDataList();
+        DataContainer.managebooks = books;
+        ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> book: books) {
+                managerViewController.addBookTableItem(book);
+            }
+        });
+    }
+
+    private void onSqlFineRecReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> fines = messageData.getDataList();
+        DataContainer.managefines = fines;
+        ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> fine: fines) {
+                managerViewController.addFineTableItem(fine);
+            }
+        });
+    }
+
+    private void onSqlReturnRecReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> backs = messageData.getDataList();
+        DataContainer.managebacks = backs;
+        ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> back: backs) {
+                managerViewController.addReturnTableItem(back);
+            }
+        });
+    }
+
+    private void onSqlRentRecReqCallBack(MessageData messageData) {
+        ArrayList<ArrayList<String>> rents = messageData.getDataList();
+        DataContainer.managerents = rents;
+        DataContainer.rentDetails = messageData.getRentDetails();
+        ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        Platform.runLater(() -> {
+            for (ArrayList<String> rent: rents) {
+                managerViewController.addRentTableItem(rent);
+            }
+        });
     }
 
     private void onSqlFineReqCallBack(MessageData messageData) {
@@ -152,6 +227,14 @@ public class Connector {
         UserViewController userViewController = (UserViewController) stageController.getController(Main.UserViewID);
         Platform.runLater(() -> {
             userViewController.setBookClassComboList(data);
+        });
+    }
+
+    private void onSqlMTypeReqCallBack(MessageData messageData) {
+        ArrayList<String> data = messageData.getData();
+        ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        Platform.runLater(() -> {
+            managerViewController.setBookClassComboList(data);
         });
     }
 

@@ -1,9 +1,13 @@
 package Views.administrator;
 
+import Conponent.Connector;
+import Conponent.MessageData;
+import Conponent.MessageType;
 import StageController.ControlledStage;
 import StageController.StageController;
 import Views.Conponent.ListItem;
-import Views.user.UserViewController;
+import Views.data.DataContainer;
+import com.company.RentDetail;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.cells.editors.base.JFXTreeTableCell;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
@@ -29,13 +33,17 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.Duration;
 import sample.Main;
 
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -90,6 +98,53 @@ public class ManagerViewController implements ControlledStage, Initializable {
 
     @FXML
     private Label timeLabel;
+
+    @FXML
+    private JFXTextField rentIDField;
+
+    @FXML
+    private JFXTextField rentUserIDFIeld;
+
+    @FXML
+    private JFXTextField rentUserNameField;
+
+    @FXML
+    private JFXTextField backRentIDField;
+
+    @FXML
+    private JFXTextField backUserIDField;
+
+    @FXML
+    private JFXTextField fineIDField;
+
+    @FXML
+    private JFXTextField fineRentIDField;
+
+    @FXML
+    private JFXTextField bookIDField;
+
+    @FXML
+    private JFXTextField bookNameField;
+
+    @FXML
+    private JFXComboBox<String> bookClassComboList;
+
+    @FXML
+    private JFXTextField authorTield;
+
+    @FXML
+    private JFXTextField pubField;
+
+    @FXML
+    private JFXButton bookSearchButton;
+
+
+    @FXML
+    private JFXTextField UserIDField;
+
+    @FXML
+    private JFXTextField UserNameFIeld;
+
 
     class BookTableItem extends RecursiveTreeObject<BookTableItem> {
         StringProperty bookID, bookName, bookType, bookAuthor, bookPub, bookNum;
@@ -153,13 +208,16 @@ public class ManagerViewController implements ControlledStage, Initializable {
     }
 
     class RentTableItem extends RecursiveTreeObject<RentTableItem> {
-        StringProperty  userName, bookName, rentDate, backDate;
+        StringProperty rentID, userID, userName, bookName, rentDate, backDate;
         HBox btnHBox;
         JFXButton detailBtn;
         JFXButton opBtn;
-        public RentTableItem(String userID, String bookID, String rentDate, String backDate) {
-            this.userName = new SimpleStringProperty(userID);
-            this.bookName = new SimpleStringProperty(bookID);
+        JFXButton deleteBtn;
+        public RentTableItem(String rentID, String userID, String userName, String bookName, String rentDate, String backDate) {
+            this.rentID = new SimpleStringProperty(rentID);
+            this.userID = new SimpleStringProperty(userID);
+            this.userName = new SimpleStringProperty(userName);
+            this.bookName = new SimpleStringProperty(bookName);
             this.rentDate = new SimpleStringProperty(rentDate);
             this.backDate = new SimpleStringProperty(backDate);
         }
@@ -168,12 +226,17 @@ public class ManagerViewController implements ControlledStage, Initializable {
             detailBtn = new JFXButton("查看");
 //            detailBtn.setBackground(new Background(new BackgroundFill(Color.ORANGE,null,null)));
             detailBtn.setStyle("-fx-background-color: forestgreen");
+            detailBtn.setFont(new Font(".PingFang SC", 10));
             detailBtn.setTextFill(Color.WHITE);
             opBtn = new JFXButton("批准");
             opBtn.setStyle("-fx-background-color: mediumpurple");
-            opBtn.setFont(new Font(".PingFang SC", 14));
+            opBtn.setFont(new Font(".PingFang SC", 10));
             opBtn.setTextFill(Color.WHITE);
-            btnHBox.getChildren().addAll(detailBtn,opBtn);
+            deleteBtn = new JFXButton("删除");
+            deleteBtn.setStyle("-fx-background-color: red");
+            deleteBtn.setFont(new Font(".PingFang SC", 10));
+            deleteBtn.setTextFill(Color.WHITE);
+            btnHBox.getChildren().addAll(detailBtn,opBtn,deleteBtn);
             btnHBox.setAlignment(Pos.CENTER);
             btnHBox.setSpacing(10);
             btnHBox.setPrefHeight(30);
@@ -184,11 +247,13 @@ public class ManagerViewController implements ControlledStage, Initializable {
         public void SetOperatieButtonVisible(boolean visible) {
             opBtn.setVisible(visible);
         }
+        public void SetDeleteButtonVisible(boolean visible) {deleteBtn.setVisible(visible);}
         public HBox getGraphic() {
             return btnHBox;
         }
         public JFXButton getDetailBtn() {return detailBtn;}
         public JFXButton getOpBtn() {return opBtn;}
+        public JFXButton getDeleteBtn() {return deleteBtn;}
     }
 
 
@@ -219,9 +284,10 @@ public class ManagerViewController implements ControlledStage, Initializable {
         JFXButton detailBtn;
         JFXButton opBtn;
         public FineTableItem(String fineID, String userName, String rentID, String fineMount, String fineDate) {
+            this.rentID = new SimpleStringProperty(rentID);
             this.fineID = new SimpleStringProperty(fineID);
             this.userName = new SimpleStringProperty(userName);
-            this.rentID = new SimpleStringProperty(rentID);
+
             this.fineMount = new SimpleStringProperty(fineMount);
             this.fineDate = new SimpleStringProperty(fineDate);
         }
@@ -230,6 +296,7 @@ public class ManagerViewController implements ControlledStage, Initializable {
             detailBtn = new JFXButton("查看");
 //            detailBtn.setBackground(new Background(new BackgroundFill(Color.ORANGE,null,null)));
             detailBtn.setStyle("-fx-background-color: forestgreen");
+            detailBtn.setFont(new Font(".PingFang SC", 14));
             detailBtn.setTextFill(Color.WHITE);
             opBtn = new JFXButton("处理");
             opBtn.setStyle("-fx-background-color: mediumpurple");
@@ -276,12 +343,13 @@ public class ManagerViewController implements ControlledStage, Initializable {
 
 
     class BackTableItem extends RecursiveTreeObject<BackTableItem> {
-        StringProperty  rentID, userName, bookName, rentDate, backDate;
+        StringProperty  rentID, userID, userName, bookName, rentDate, backDate;
         HBox btnHBox;
         JFXButton detailBtn;
         JFXButton opBtn;
-        public BackTableItem(String rentID, String userName, String bookName, String rentDate, String backDate) {
+        public BackTableItem(String rentID, String userID, String userName, String bookName, String rentDate, String backDate) {
             this.rentID = new SimpleStringProperty(rentID);
+            this.userID = new SimpleStringProperty(userID);
             this.userName = new SimpleStringProperty(userName);
             this.bookName = new SimpleStringProperty(bookName);
             this.rentDate = new SimpleStringProperty(rentDate);
@@ -425,6 +493,8 @@ public class ManagerViewController implements ControlledStage, Initializable {
         Timeline animation = new Timeline(new KeyFrame(Duration.millis(1000), eventHandler));
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
+
+        setBookClassComboList();
 
         try {
             listItem = new ListItem("/home/haines/IdeaProjects/BookManageSystem/BMSClient/BookManageSystem/src/pictures/rent.png","借阅审核",20);
@@ -590,15 +660,29 @@ public class ManagerViewController implements ControlledStage, Initializable {
         bookTable.setShowRoot(false);
 
         /******************** rent Table **********************/
-        JFXTreeTableColumn<RentTableItem, String> userID = new JFXTreeTableColumn<>("用户名称");
-        userID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
+        JFXTreeTableColumn<RentTableItem, String> rentID = new JFXTreeTableColumn<>("借阅编号");
+        rentID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
+                return param.getValue().getValue().rentID;
+            }
+        });
+        JFXTreeTableColumn<RentTableItem, String> rUserID = new JFXTreeTableColumn<>("用户编号");
+        rUserID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
+                return param.getValue().getValue().userID;
+            }
+        });
+        JFXTreeTableColumn<RentTableItem, String> userName = new JFXTreeTableColumn<>("用户名");
+        userName.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
             @Override
             public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
                 return param.getValue().getValue().userName;
             }
         });
-        JFXTreeTableColumn<RentTableItem, String> rBookID = new JFXTreeTableColumn<>("图书名称");
-        rBookID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
+        JFXTreeTableColumn<RentTableItem, String> rBookName = new JFXTreeTableColumn<>("图书名称");
+        rBookName.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<RentTableItem, String>, ObservableValue<String>>() {
             @Override
             public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<RentTableItem, String> param) {
                 return param.getValue().getValue().bookName;
@@ -636,22 +720,84 @@ public class ManagerViewController implements ControlledStage, Initializable {
                         System.out.println("I'm in rent!");
 //                        userViewController.getStage(Main.UserDetailDialogID).setTitle("借阅详情");
 //                        userViewController.setStage(Main.UserDetailDialogID);
+                        RentDetailViewController rentDetailViewController = (RentDetailViewController) managerViewController.getController(Main.ManagerRentDetailViewID);
+                        int index = cell.getIndex();
+                        assert DataContainer.rents.size() > index;
+                        assert DataContainer.rentDetails.size() > index;
+                        ArrayList<String> rent = DataContainer.managerents.get(index);
+                        RentDetail detail = DataContainer.rentDetails.get(index);
+                        rentDetailViewController.clearInfo();
+                        rentDetailViewController.setUserIDField(rent.get(1));
+                        rentDetailViewController.setUserNameField(rent.get(2));
+                        rentDetailViewController.setRentIDField(rent.get(0));
+                        rentDetailViewController.setRentNumField(String.valueOf(detail.getRentNum()));
+                        rentDetailViewController.setUnreturnBooksField(detail.getBooks());
+                        rentDetailViewController.setFineMountField(String.valueOf(detail.getFineMount()));
+                        managerViewController.getStage(Main.ManagerRentDetailViewID).setTitle("借阅详情");
+                        managerViewController.setStage(Main.ManagerRentDetailViewID);
                     }
                 });
                 cell.getRentItem().getOpBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of rent!");
+                        int index = cell.getIndex();
+                        ArrayList<String> rent = DataContainer.managerents.get(index);
+                        RentDetail detail = DataContainer.rentDetails.get(index);
+                        if (detail.getRentNum() > 3) {
+                            popHintDialog("该用户借阅数量达到上限");
+                            return;
+                        }
+                        if (detail.getBooks().size() > 0) {
+                            popHintDialog("该用户存在逾期行为");
+                            return;
+                        }
+                        if (detail.getFineMount() > 0) {
+                            popHintDialog("该用户罚款未缴纳");
+                            return;
+                        }
+                        String sql = "insert into BorrowReg (uID, bID, rDate, rbDate, isBack) values (" +
+                                rent.get(1) + "," + rent.get(3) + ",'" + rent.get(5) + "','" +
+                                rent.get(6) + "'," + "0" +
+                                ")";
+
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.sqlReq);
+                        messageData.getData().add(sql);
+                        Connector.getInstance().send(messageData);
+                        popHintDialog("已允许该用户借阅请求");
+                        sql = "delete from RentRecord where RentID = " + DataContainer.managerents.get(cell.getIndex()).get(0);
+                        messageData.getData().clear();
+                        messageData.getData().add(sql);
+                        messageData.setMessageType(MessageType.sqlReq);
+                        Connector.getInstance().send(messageData);
+
+                        DataContainer.managerents.remove(cell.getIndex());
+                        rents.remove(cell.getIndex());
                     }
                 });
+                cell.getRentItem().getDeleteBtn().setOnMouseClicked((new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        System.out.println("I'm in-out of rent!");
+                        String sql = "delete from RentRecord where RentID = " + DataContainer.managerents.get(cell.getIndex()).get(0);
+                        MessageData messageData = new MessageData();
+                        messageData.getData().add(sql);
+                        messageData.setMessageType(MessageType.sqlReq);
+                        Connector.getInstance().send(messageData);
+
+
+                        DataContainer.managerents.remove(cell.getIndex());
+                        rents.remove(cell.getIndex());
+
+                        popHintDialog("删除借阅申请成功");
+                    }
+                }));
                 return cell;
             }
         });
 
-        rents.add(new RentTableItem("lhm","2","2018","2019"));
-        rents.add(new RentTableItem("lhm","工具书","lhm","hust"));
-
-        rentTable.getColumns().setAll(userID, rBookID, rentDate, backDate, rentOp);
+        rentTable.getColumns().setAll(rentID, rUserID, userName, rBookName, rentDate, backDate, rentOp);
         rentTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
 
         final TreeItem<RentTableItem> rentRoot = new RecursiveTreeItem<>(rents, RecursiveTreeObject::getChildren);
@@ -733,7 +879,7 @@ public class ManagerViewController implements ControlledStage, Initializable {
         fines.add(new FineTableItem("1","lhm","2","2018","2019"));
         fines.add(new FineTableItem("1","lhm","2","lhm","hust"));
 
-        fineTable.getColumns().setAll(fineID, fuserID, frentID, fineMount, fineDate, fineOp);
+        fineTable.getColumns().setAll(fineID, frentID, fuserID, fineMount, fineDate, fineOp);
         fineTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
 
         final TreeItem<FineTableItem> fineRoot = new RecursiveTreeItem<>(fines, RecursiveTreeObject::getChildren);
@@ -748,8 +894,15 @@ public class ManagerViewController implements ControlledStage, Initializable {
                 return param.getValue().getValue().rentID;
             }
         });
-        JFXTreeTableColumn<BackTableItem, String> bUserID = new JFXTreeTableColumn<>("用户名称");
+        JFXTreeTableColumn<BackTableItem, String> bUserID = new JFXTreeTableColumn<>("用户编号");
         bUserID.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<BackTableItem, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<BackTableItem, String> param) {
+                return param.getValue().getValue().userID;
+            }
+        });
+        JFXTreeTableColumn<BackTableItem, String> bUserName = new JFXTreeTableColumn<>("用户名");
+        bUserName.setCellValueFactory(new Callback<TreeTableColumn.CellDataFeatures<BackTableItem, String>, ObservableValue<String>>() {
             @Override
             public ObservableValue<String> call(TreeTableColumn.CellDataFeatures<BackTableItem, String> param) {
                 return param.getValue().getValue().userName;
@@ -806,10 +959,10 @@ public class ManagerViewController implements ControlledStage, Initializable {
             }
         });
 
-        backs.add(new BackTableItem("1","lhm","2","2018","2019"));
-        backs.add(new BackTableItem("1","lhm","工具书","lhm","hust"));
+        backs.add(new BackTableItem("1","1","lhm","2","2018","2019"));
+        backs.add(new BackTableItem("1","1","lhm","工具书","lhm","hust"));
 
-        backTable.getColumns().setAll(bRentID, bUserID, bBookID, bRentDate, bBackDate, backOp);
+        backTable.getColumns().setAll(bRentID, bUserID, bUserName, bBookID, bRentDate, bBackDate, backOp);
         backTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
 
         final TreeItem<BackTableItem> backRoot = new RecursiveTreeItem<>(backs, RecursiveTreeObject::getChildren);
@@ -928,6 +1081,205 @@ public class ManagerViewController implements ControlledStage, Initializable {
 
     public void onQuitButtonClicked() {
         managerViewController.closeStage(Main.ManagerViewID);
+    }
+
+    public void onRentSearchButtonClicked() {
+        String sql = "select * from RentReqView ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlRentUserID = rentUserIDFIeld.getText().trim().equals("") ? "" : "UserID = " + rentUserIDFIeld.getText().trim();
+        String sqlRentID = rentIDField.getText().trim().equals("") ? "" :  "RentID = " + rentIDField.getText().trim();
+        if (!sqlRentID.equals("")) alter.add(sqlRentID);
+        if (!sqlRentUserID.equals("")) alter.add(sqlRentUserID);
+        if (alter.size() > 0) sql = "select * from RentReqView where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlRentRecReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        rents.clear();
+    }
+
+    public void onReturnSearchButtonClicked() {
+        String sql = "select * from BackReqView ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlRentUserID = backUserIDField.getText().trim().equals("") ? "" : "UserID = " + rentUserIDFIeld.getText().trim();
+        String sqlRentID = backRentIDField.getText().trim().equals("") ? "" :  "RentID = " + rentIDField.getText().trim();
+        if (!sqlRentID.equals("")) alter.add(sqlRentID);
+        if (!sqlRentUserID.equals("")) alter.add(sqlRentUserID);
+        if (alter.size() > 0) sql = "select * from BackReqView where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlReturnRecReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        backs.clear();
+
+    }
+
+    public void onFineSearchButtonClicked() {
+        String sql = "select * from FineReqView ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlFineRentID = fineRentIDField.getText().trim().equals("") ? "" : "UserID = " + rentUserIDFIeld.getText().trim();
+        String sqfineID = fineIDField.getText().trim().equals("") ? "" :  "RentID = " + rentIDField.getText().trim();
+        if (!sqfineID.equals("")) alter.add(sqfineID);
+        if (!sqlFineRentID.equals("")) alter.add(sqlFineRentID);
+        if (alter.size() > 0) sql = "select * from FineReqView where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlFineRecReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        fines.clear();
+    }
+
+    public void onBookSearchButtonClicked() {
+        String sql = "select * from BookReqView ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlBookID = bookIDField.getText().trim().equals("") ? "" : "BookID = " + bookIDField.getText().trim();
+        String sqlBookName = bookNameField.getText().trim().equals("") ? "" : "BookName = '" +  bookNameField.getText().trim() + "'";
+        String sqlBookClass = bookClassComboList.getEditor().getText().trim().equals("") ? "" : "BookType = '" + bookClassComboList.getSelectionModel().getSelectedItem() + "'";
+        String sqlBookAuthor = authorTield.getText().trim().equals("") ? "" : "AuthorName = '" + authorTield.getText().trim() + "'";
+        String sqlPublisher = pubField.getText().trim().equals("") ? "" : "PubName = '" + pubField.getText().trim() + "'";
+        System.out.println(bookClassComboList.getEditor().getText().trim());
+        if (!sqlBookID.equals("")) alter.add(sqlBookID);
+        if (!sqlBookName.equals("")) alter.add(sqlBookName);
+        if (!sqlBookClass.equals("")) alter.add(sqlBookClass);
+        if (!sqlBookAuthor.equals("")) alter.add(sqlBookAuthor);
+        if (!sqlPublisher.equals("")) alter.add(sqlPublisher);
+        if (alter.size() > 0) sql = "select * from BookReqView where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlBookRecReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+        books.clear();
+    }
+
+    public void onUserSearchButtonClicked() {
+        String sql = "select * from UserReqView ";
+        ArrayList<String> alter = new ArrayList<>();
+        String sqlUserID = UserIDField.getText().trim().equals("") ? "" : "UserID = " + rentUserIDFIeld.getText().trim();
+        String sqlUserName = UserNameFIeld.getText().trim().equals("") ? "" :  "UserName = " + rentIDField.getText().trim();
+        if (!sqlUserID.equals("")) alter.add(sqlUserID);
+        if (!sqlUserName.equals("")) alter.add(sqlUserName);
+        if (alter.size() > 0) sql = "select * from UserReqView where ";
+        for (int i = 0 ; i < alter.size() ; ++i) {
+            if (i == alter.size() - 1) sql += alter.get(i);
+            else sql += alter.get(i) + " and ";
+        }
+        try {
+            sql = new String(sql.getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlUserRecReq);
+        messageData.getData().add(sql);
+        Connector.getInstance().send(messageData);
+
+        users.clear();
+
+    }
+
+    public void addRentTableItem(ArrayList<String> rent) {
+        assert rent.size() >= 7;
+        // (RentID, UserID, UserName, BookID, BookName, RentDate, ReturnDate)
+        rents.add(new RentTableItem(rent.get(0), rent.get(1), rent.get(2), rent.get(4), rent.get(5), rent.get(6)));
+    }
+
+    public void addReturnTableItem(ArrayList<String> back) {
+        assert back.size() >= 7;
+        // (RentID, UserID, UserName, BookID, BookName, RetDate, ReturnDate)
+        backs.add(new BackTableItem(back.get(0), back.get(1), back.get(2), back.get(4), back.get(5), back.get(6)));
+    }
+
+    public void addFineTableItem(ArrayList<String> fine) {
+        assert fine.size() >= 6;
+        // (FineID, RentID, UserID, UserName, FineMount, FineDate)
+        fines.add(new FineTableItem(fine.get(0), fine.get(1), fine.get(3), fine.get(4), fine.get(5)));
+    }
+
+    public void addBookTableItem(ArrayList<String> book) {
+        assert book.size() >= 11;
+        // (BookID, BookName, BookType, AuthorName, PubName, PubDate, TotNum, LeftNum, Price, Score, Reviews)
+        books.add(new BookTableItem(book.get(0), book.get(1), book.get(2), book.get(3), book.get(4), book.get(6)));
+    }
+
+    public void addUserTableItem(ArrayList<String> user) {
+        assert user.size() >= 6;
+        // (UserID, UserName, UserPwd, UserEmail, UserTele, UserJob, UserRegisterTime)
+        users.add(new UserTableItem(user.get(0), user.get(1), user.get(3), user.get(4), user.get(5), user.get(6)));
+    }
+
+    private void setBookClassComboList() {
+        MessageData messageData = new MessageData();
+        messageData.setMessageType(MessageType.sqlMTypeReq);
+        Connector.getInstance().send(messageData);
+    }
+
+    public void setBookClassComboList(ArrayList<String> items) {
+        bookClassComboList.getItems().clear();
+        for (String item: items) {
+            bookClassComboList.getItems().add(item);
+        }
+    }
+
+    public void popHintDialog(String hintContent) {
+        JFXAlert alert = new JFXAlert((Stage) managerItemListView.getScene().getWindow());
+        alert.initModality(Modality.APPLICATION_MODAL);
+        alert.setOverlayClose(false);
+
+        JFXDialogLayout layout = new JFXDialogLayout();
+        layout.setHeading(new javafx.scene.control.Label("提示"));
+        layout.setBody(new Label(hintContent));
+
+        JFXButton closeButton = new JFXButton("确定");
+        closeButton.setOnAction(event -> alert.hideWithAnimation());
+        layout.setActions(closeButton);
+        alert.setContent(layout);
+
+        alert.show();
     }
 
 }

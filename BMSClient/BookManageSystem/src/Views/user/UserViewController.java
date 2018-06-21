@@ -743,6 +743,7 @@ public class UserViewController implements ControlledStage, Initializable {
     }
 
     public void setBookClassComboList(ArrayList<String> items) {
+        bookClassComboList.getItems().clear();
         for (String item: items) {
             bookClassComboList.getItems().add(item);
         }

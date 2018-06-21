@@ -62,10 +62,12 @@ public class LoginDialogController implements ControlledStage, Initializable {
         messageData.getData().add(pwdText.getText().trim());
         if (readerCheckBox.isSelected() && !adminCheckBox.isSelected()) {
             messageData.setMessageType(MessageType.userLoginReq);
+            System.out.println("reader");
             Connector.getInstance().send(messageData);
         }
         else if (adminCheckBox.isSelected() && !readerCheckBox.isSelected()) {
             messageData.setMessageType(MessageType.adminLoginReq);
+            System.out.println("admin");
             Connector.getInstance().send(messageData);
         } else popHintDialog("Hello, 罗海旻 ^_^");
     }

@@ -3,7 +3,6 @@ package Network;
 import Conponent.MessageData;
 import Conponent.MessageType;
 
-import java.awt.desktop.SystemSleepEvent;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -60,7 +59,8 @@ public abstract class NetworkConnection {
                 }
 
             } catch (Exception e) {
-                System.out.println(e);
+                e.printStackTrace();
+                System.out.println("error");
                 onReceiveCallback.accept(new MessageData(MessageType.error, new ArrayList<>()));
             }
 

@@ -1,5 +1,7 @@
 package Views.data;
 
+import com.company.RentDetail;
+
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -23,6 +25,20 @@ public class DataContainer {
 
     public static ArrayList<ArrayList<String>> fines = new ArrayList<>();
 
+    public static ArrayList<ArrayList<String>> managebooks = new ArrayList<>();
+
+    public static ArrayList<ArrayList<String>> managerents = new ArrayList<>();
+
+    public static ArrayList<ArrayList<String>> managefines = new ArrayList<>();
+
+    public static ArrayList<ArrayList<String>> managebacks = new ArrayList<>();
+
+    public static ArrayList<ArrayList<String>> manageusers = new ArrayList<>();
+
+    public static ArrayList<RentDetail> rentDetails = new ArrayList<>();
+
+
+
     public static Timestamp getTimeStamp() {
         Date date = new Date();
         return new Timestamp(date.getTime());
@@ -35,4 +51,6 @@ public class DataContainer {
         c.add(Calendar.DAY_OF_MONTH,30);
         return new Timestamp(c.getTime().getTime());
     }
+
+
 }

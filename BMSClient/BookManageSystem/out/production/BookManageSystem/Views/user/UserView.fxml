@@ -61,7 +61,7 @@
          </right>
       </JFXToolbar>
       <JFXListView fx:id="itemListView" layoutX="59.0" layoutY="40.0" prefHeight="175.0" prefWidth="213.0" AnchorPane.leftAnchor="59.0" AnchorPane.topAnchor="40.0" />
-      <AnchorPane fx:id="BookTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0" visible="false">
+      <AnchorPane fx:id="BookTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0">
          <children>
             <JFXTreeTableView fx:id="bookTable" depthTest="ENABLE" layoutY="166.0" prefHeight="510.0" prefWidth="909.0">
                <effect>
@@ -171,7 +171,7 @@
             </JFXToolbar>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="TimeTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0">
+      <AnchorPane fx:id="TimeTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0" visible="false">
          <children>
             <JFXTreeTableView fx:id="fineTable" depthTest="ENABLE" layoutY="128.0" prefHeight="543.0" prefWidth="909.0">
                <effect>

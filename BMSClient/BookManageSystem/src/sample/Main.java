@@ -29,6 +29,9 @@ public class Main extends Application {
     public static String UserAltpwdDialogID = "UserAltpwdDialog";
     public static String UserAltpwdDialogRes = "../Views/user/UserAltpwdDialog.fxml";
 
+    public static String ManagerRentDetailViewID = "ManagerRentDetailView";
+    public static String ManagerRentDetailViewRes = "../Views/administrator/RentDetailView.fxml";
+
     private StageController stageController;
 
     @Override
@@ -53,6 +56,8 @@ public class Main extends Application {
 
         stageController.loadStage(UserProfileViewID, UserProfileViewRes);
         stageController.loadStage(UserAltpwdDialogID,UserAltpwdDialogRes);
+
+        stageController.loadStage(ManagerRentDetailViewID, ManagerRentDetailViewRes);
 
         stageController.getStage(LoginDialogID).setTitle("欢迎登陆图书管理系统");
         stageController.getStage(UserViewID).setTitle("欢迎使用图书管理系统");

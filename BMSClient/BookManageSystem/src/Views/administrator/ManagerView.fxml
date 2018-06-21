@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXToolbar?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
@@ -12,6 +14,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="741.0" prefWidth="1221.0" stylesheets="@ManagerView.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.administrator.ManagerViewController">
@@ -87,16 +90,16 @@
                <center>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="907.0" spacing="20.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Label text="Label" />
-                        <JFXTextField />
+                        <Label text="借阅编号" />
+                        <JFXTextField fx:id="rentIDField" />
                         <Pane prefHeight="59.0" prefWidth="75.0" />
-                        <Label text="Label">
+                        <Label text="用户编号">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
                         </Label>
-                        <JFXTextField />
-                        <JFXButton fx:id="rentSearchButton" style="-fx-background-color: cornflowerblue;" text="搜索" textFill="WHITE">
+                        <JFXTextField fx:id="rentUserIDFIeld" />
+                        <JFXButton fx:id="rentSearchButton" onMouseClicked="#onRentSearchButtonClicked" style="-fx-background-color: cornflowerblue;" text="查询" textFill="WHITE">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
@@ -107,7 +110,7 @@
             </JFXToolbar>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="backTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0">
+      <AnchorPane fx:id="backTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0" visible="false">
          <children>
             <JFXTreeTableView fx:id="backTable" depthTest="ENABLE" layoutY="128.0" prefHeight="517.0" prefWidth="909.0">
                <effect>
@@ -123,16 +126,16 @@
                <center>
                   <HBox fx:id="searchBar3" alignment="CENTER" prefHeight="50.0" prefWidth="907.0" spacing="20.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Label text="Label" />
-                        <JFXTextField />
+                        <Label text="借阅编号" />
+                        <JFXTextField fx:id="backRentIDField" />
                         <Pane prefHeight="59.0" prefWidth="75.0" />
-                        <Label text="Label">
+                        <Label text="用户编号">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
                         </Label>
-                        <JFXTextField />
-                        <JFXButton fx:id="timeSearchButton1" style="-fx-background-color: cornflowerblue;" text="搜索" textFill="WHITE">
+                        <JFXTextField fx:id="backUserIDField" />
+                        <JFXButton fx:id="timeSearchButton1" onMouseClicked="#onReturnSearchButtonClicked" style="-fx-background-color: cornflowerblue;" text="查询" textFill="WHITE">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
@@ -181,16 +184,16 @@
                <center>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="907.0" spacing="20.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Label text="Label" />
-                        <JFXTextField />
+                        <Label text="罚款编号" />
+                        <JFXTextField fx:id="fineIDField" />
                         <Pane prefHeight="59.0" prefWidth="75.0" />
-                        <Label text="Label">
+                        <Label text="借阅编号">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
                         </Label>
-                        <JFXTextField />
-                        <JFXButton fx:id="timeSearchButton" style="-fx-background-color: cornflowerblue;" text="搜索" textFill="WHITE">
+                        <JFXTextField fx:id="fineRentIDField" />
+                        <JFXButton fx:id="timeSearchButton" onMouseClicked="#onFineSearchButtonClicked" style="-fx-background-color: cornflowerblue;" text="搜索" textFill="WHITE">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
@@ -203,7 +206,7 @@
       </AnchorPane>
       <AnchorPane fx:id="bookTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0" visible="false">
          <children>
-            <JFXTreeTableView fx:id="bookTable" depthTest="ENABLE" layoutY="128.0" prefHeight="517.0" prefWidth="909.0">
+            <JFXTreeTableView fx:id="bookTable" depthTest="ENABLE" layoutY="166.0" prefHeight="510.0" prefWidth="909.0">
                <effect>
                   <DropShadow color="#e4e4e4" height="9.62" radius="3.36" width="5.82">
                      <input>
@@ -212,12 +215,11 @@
                   </DropShadow>
                </effect>
             </JFXTreeTableView>
-            <Label layoutX="8.0" layoutY="654.0" text="Label1" />
-            <JFXToolbar fx:id="searchBar4" layoutX="-1.0" layoutY="25.0" prefHeight="87.0" prefWidth="909.0">
+            <JFXToolbar fx:id="searchBar4" layoutY="25.0" prefHeight="126.0" prefWidth="909.0">
                <top>
                   <JFXToolbar fx:id="titleBar4" prefHeight="26.0" prefWidth="909.0" BorderPane.alignment="CENTER">
                      <center>
-                        <Label text="图书管理" BorderPane.alignment="CENTER">
+                        <Label text="书籍查询" BorderPane.alignment="CENTER">
                            <font>
                               <Font name=".PingFang SC Medium" size="14.0" />
                            </font>
@@ -226,29 +228,48 @@
                   </JFXToolbar>
                </top>
                <center>
-                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="907.0" spacing="20.0" BorderPane.alignment="CENTER">
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Label text="Label" />
-                        <JFXTextField />
-                        <Pane prefHeight="59.0" prefWidth="75.0" />
-                        <Label text="Label">
-                           <font>
-                              <Font name=".PingFang SC Medium" size="13.0" />
-                           </font>
-                        </Label>
-                        <JFXTextField />
-                        <JFXButton fx:id="bookSearchButton" text="搜索" textFill="WHITE">
-                           <font>
-                              <Font name=".PingFang SC Medium" size="13.0" />
-                           </font>
-                        </JFXButton>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="图书编号" />
+                              <JFXTextField fx:id="bookIDField" />
+                              <Label text="图书名称" />
+                              <JFXTextField fx:id="bookNameField" />
+                              <Label text="图书类别" />
+                              <JFXComboBox fx:id="bookClassComboList" editable="true" prefHeight="24.0" prefWidth="148.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="907.0" spacing="20.0">
+                           <children>
+                              <Label text="作者名称" />
+                              <JFXTextField fx:id="authorTield" />
+                              <Label text="出版机构">
+                                 <font>
+                                    <Font name=".PingFang SC Medium" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="pubField" />
+                              <JFXButton fx:id="bookSearchButton" onMouseClicked="#onBookSearchButtonClicked" text="查询" textFill="WHITE">
+                                 <font>
+                                    <Font name=".PingFang SC Medium" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </HBox>
                      </children>
-                  </HBox>
+                  </VBox>
                </center>
             </JFXToolbar>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="readerTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0" visible="false">
+      <AnchorPane fx:id="readerTab" layoutX="255.0" layoutY="14.0" prefHeight="675.0" prefWidth="909.0">
          <children>
             <JFXTreeTableView fx:id="userTable" depthTest="ENABLE" layoutY="128.0" prefHeight="517.0" prefWidth="909.0">
                <effect>
@@ -260,7 +281,7 @@
                </effect>
             </JFXTreeTableView>
             <Label layoutX="8.0" layoutY="654.0" text="Label1" />
-            <JFXToolbar fx:id="searchBar5" layoutX="-1.0" layoutY="25.0" prefHeight="87.0" prefWidth="909.0">
+            <JFXToolbar fx:id="searchBar5" layoutY="25.0" prefHeight="87.0" prefWidth="909.0">
                <top>
                   <JFXToolbar fx:id="titleBar5" prefHeight="26.0" prefWidth="909.0" BorderPane.alignment="CENTER">
                      <center>
@@ -275,16 +296,16 @@
                <center>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="907.0" spacing="20.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Label text="Label" />
-                        <JFXTextField />
+                        <Label text="用户编号" />
+                        <JFXTextField fx:id="UserIDField" />
                         <Pane prefHeight="59.0" prefWidth="75.0" />
-                        <Label text="Label">
+                        <Label text="用户名">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
                         </Label>
-                        <JFXTextField />
-                        <JFXButton fx:id="bookSearchButton1" style="-fx-background-color: cornflowerblue;" text="搜索" textFill="WHITE">
+                        <JFXTextField fx:id="UserNameFIeld" />
+                        <JFXButton fx:id="bookSearchButton1" onMouseClicked="#onUserSearchButtonClicked" style="-fx-background-color: cornflowerblue;" text="搜索" textFill="WHITE">
                            <font>
                               <Font name=".PingFang SC Medium" size="13.0" />
                            </font>
