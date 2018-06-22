@@ -1,0 +1,65 @@
+.root {
+    -fx-background-color: white;
+}
+
+#anchor_pane {
+    -fx-background-color: transparent;
+}
+
+#doctorAnchorPane {
+    -fx-background-color: white;
+}
+
+#doctorAnchorPane {
+    -fx-background-color: transparent;
+}
+
+.pane {
+    -fx-background-color: #EBF2F9;
+}
+.scene {
+    -fx-background-color: transparent, white 20%;
+}
+
+.button {
+    -fx-background-color: whitesmoke;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+#userIcon {
+    -fx-background-image: url("../../pictures/stick-man.png");
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+}
+
+#pwdIcon {
+    -fx-background-image: url("../../pictures/key_1.png");
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+
+}
+
+#loginIcon {
+    -fx-background-size: stretch;
+    -fx-background-image: url("../../pictures/library.png");
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+}
+
+/*#nodelist {*/
+    /*-fx-background-image: url("pic/key.png");*/
+    /*-fx-background-color: transparent;*/
+    /*-fx-focus-traversable: false;*/
+    /*-fx-background-size: stretch;*/
+/*}*/
+
+#fndBackButton  {
+    -fx-background-color: white;
+}
+
+#regButton {
+    -fx-background-color: white;
+}

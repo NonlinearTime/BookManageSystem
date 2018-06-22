@@ -85,6 +85,8 @@ public abstract class NetworkConnection {
                 }
 
             } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("error");
                 onReceiveCallback.accept(new MessageData(MessageType.error, new ArrayList<>()));
             }
         }

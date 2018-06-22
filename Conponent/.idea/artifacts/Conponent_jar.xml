@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Conponent:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Conponent_jar</output-path>
+    <root id="archive" name="Conponent.jar">
+      <element id="module-output" name="Conponent" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/RentDetail.java" />
+    </root>
+  </artifact>
+</component>

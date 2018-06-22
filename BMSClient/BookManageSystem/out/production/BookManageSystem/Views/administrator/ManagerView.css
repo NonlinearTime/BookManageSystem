@@ -150,6 +150,10 @@
     -fx-background-color: cornflowerblue;
 }
 
+#bookUploadButton{
+    -fx-background-color: cornflowerblue;
+}
+
 #rentSearchButton {
     fx-background-color: cornflowerblue;
 }

@@ -52,5 +52,11 @@ public class DataContainer {
         return new Timestamp(c.getTime().getTime());
     }
 
+    public static Date addDate(Date date) {
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.add(Calendar.DAY_OF_MONTH,30);
+        return new Date(c.getTime().getTime());
+    }
 
 }

@@ -15,5 +15,7 @@ public class MessageType {
     userLoginReq = 7, adminLoginReq = 8, userLoginAdmit = 9, adminLoginAdmit = 10, loginDeny = 11,
     error = 12 , altPwd = 13, altDeny = 14, altAdmit = 15,
     sqlReq = 16, sqlBTypeReq = 17,  sqlBookReq = 18, rentReq = 19, returnReq = 20, fineReq = 21,
-    sqlRentReq = 22, sqlFineReq = 23;
+    sqlRentReq = 22, sqlFineReq = 23,
+    sqlRentRecReq = 24, sqlReturnRecReq  = 25, sqlFineRecReq = 26, sqlBookRecReq = 27, sqlUserRecReq = 28,
+    sqlMTypeReq = 29;
 }

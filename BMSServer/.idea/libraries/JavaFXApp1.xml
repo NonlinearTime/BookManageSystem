@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaFXApp1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../BMSClient/BookManageSystem/out/artifacts/JavaFXApp/JavaFXApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

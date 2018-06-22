@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Rent:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Rent_jar</output-path>
-    <root id="archive" name="Rent.jar">
-      <element id="module-output" name="Rent" />
-    </root>
-  </artifact>
-</component>

@@ -3,6 +3,7 @@ package Conponent;
 import Network.Client;
 import Network.Server;
 import StageController.StageController;
+import Views.administrator.ManageBookUploadDialogController;
 import Views.administrator.ManagerViewController;
 import Views.data.DataContainer;
 import Views.login.FndBkPwdController;
@@ -233,8 +234,11 @@ public class Connector {
     private void onSqlMTypeReqCallBack(MessageData messageData) {
         ArrayList<String> data = messageData.getData();
         ManagerViewController managerViewController = (ManagerViewController) stageController.getController(Main.ManagerViewID);
+        ManageBookUploadDialogController manageBookUploadDialogController = (ManageBookUploadDialogController) stageController.getController(Main.ManagerBookUploadViewID);
+        System.out.println(manageBookUploadDialogController);
         Platform.runLater(() -> {
             managerViewController.setBookClassComboList(data);
+            manageBookUploadDialogController.setBookClassComboList(data);
         });
     }
 

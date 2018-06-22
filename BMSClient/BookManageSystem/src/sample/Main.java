@@ -31,6 +31,17 @@ public class Main extends Application {
 
     public static String ManagerRentDetailViewID = "ManagerRentDetailView";
     public static String ManagerRentDetailViewRes = "../Views/administrator/RentDetailView.fxml";
+    public static String ManagerBackDetailViewID = "ManagerBackDetailView";
+    public static String ManagerBackDetailViewRes = "../Views/administrator/ManageBackDialog.fxml";
+    public static String ManagerFineDetailViewID = "ManagerFienDetialView";
+    public static String ManagerFineDetailViewRes = "../Views/administrator/ManageFineDialog.fxml";
+    public static String ManagerBookDetailViewID = "ManagerBookDetailView";
+    public static String ManagerBookDetailViewRes = "../Views/administrator/ManageBookOpDialog.fxml";
+    public static String ManagerUserDetailViewID = "ManagerUserDetailView";
+    public static String ManagerUserDetailViewRes = "../Views/administrator/ManagerUserDetailDialog.fxml";
+    public static String ManagerBookUploadViewID = "ManagerBookUploadView";
+    public static String ManagerBookUploadViewRes = "../Views/administrator/ManageBookUploadDialog.fxml";
+
 
     private StageController stageController;
 
@@ -44,6 +55,7 @@ public class Main extends Application {
 
         stageController.loadStage(LoginDialogID,LoginDialogRes);
         stageController.loadStage(UserViewID,UserViewRes);
+        stageController.loadStage(ManagerBookUploadViewID, ManagerBookUploadViewRes);
         stageController.loadStage(ManagerViewID,ManagerViewRes);
 
         stageController.loadStage(LoginRegViewID,LoginRegViewRes);
@@ -58,6 +70,13 @@ public class Main extends Application {
         stageController.loadStage(UserAltpwdDialogID,UserAltpwdDialogRes);
 
         stageController.loadStage(ManagerRentDetailViewID, ManagerRentDetailViewRes);
+        stageController.loadStage(ManagerBackDetailViewID, ManagerBackDetailViewRes);
+        stageController.loadStage(ManagerFineDetailViewID, ManagerFineDetailViewRes);
+        stageController.loadStage(ManagerBookDetailViewID, ManagerBookDetailViewRes);
+        stageController.loadStage(ManagerUserDetailViewID, ManagerUserDetailViewRes);
+
+
+
 
         stageController.getStage(LoginDialogID).setTitle("欢迎登陆图书管理系统");
         stageController.getStage(UserViewID).setTitle("欢迎使用图书管理系统");

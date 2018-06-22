@@ -1,7 +1,9 @@
 package Network;
 
 import Conponent.*;
+import com.company.RentDetail;
 
+import javax.xml.crypto.Data;
 import java.awt.desktop.SystemSleepEvent;
 import java.io.*;
 import java.net.Socket;
@@ -44,6 +46,7 @@ public class SocketThread extends Thread {
 
     private void CallBack(Serializable data) {
         MessageData messageData = (MessageData) data;
+        System.out.println(messageData.getMessageType());
         switch (messageData.getMessageType()) {
             case MessageType.regReq:
                 onRegisterCallBack(messageData);
@@ -62,6 +65,9 @@ public class SocketThread extends Thread {
                 break;
             case MessageType.altPwd:
                 onAltPwdCallBack(messageData);
+                break;
+            case MessageType.sqlReq:
+                onSqlReqCallBack(messageData);
                 break;
             case MessageType.sqlBookReq:
                 onSqlBookReqCallBack(messageData);
@@ -84,13 +90,275 @@ public class SocketThread extends Thread {
             case MessageType.fineReq:
                 onFineReqCallBack(messageData);
                 break;
-            default:
+            case MessageType.sqlRentRecReq:
+                onSqlRentRecReqCallBack(messageData);
                 break;
+            case MessageType.sqlReturnRecReq:
+                onSqlReturnRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlFineRecReq:
+                onSqlFineRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlBookRecReq:
+                onSqlBookRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlUserRecReq:
+                onSqlUserRecReqCallBack(messageData);
+                break;
+            case MessageType.sqlMTypeReq:
+                onSqlMTypeReqCallBack(messageData);
+                break;
+                
+            default:
+                onErrorCallBack(messageData);
+                break;
+        }
+    }
+
+    private void onErrorCallBack(MessageData messageData) {
+        System.out.println(messageData.getData());
+    }
+
+    private void onSqlMTypeReqCallBack(MessageData messageData) {
+        String sql = "select distinct BookType from BookReqView";
+        ResultSet rs = DataAccess.Query(sql);
+        MessageData reply = new MessageData();
+        reply.setMessageType(MessageType.sqlMTypeReq);
+        try {
+            while(rs.next()) {
+                reply.getData().add(rs.getString("BookType"));
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            System.out.println(reply.getData().size());
+            send(reply);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void onSqlUserRecReqCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 1;
+        String sql = null;
+        try {
+            sql = new String(messageData.getData().get(0).getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs =  DataAccess.Query(sql);
+        MessageData reply = new MessageData();
+        reply.setMessageType(MessageType.sqlUserRecReq);
+        System.out.println(sql);
+
+        try {
+            while (rs.next()) {
+                ArrayList<String> user = new ArrayList<>();
+                user.add(String.valueOf(rs.getInt("UserID")));
+                user.add(rs.getString("UserName"));
+                user.add(rs.getString("UserPwd"));
+                user.add(rs.getString("UserEmail"));
+                user.add(rs.getString("UserTele"));
+                user.add(rs.getString("UserJob"));
+                user.add(new Date(rs.getTimestamp("UserRegisterTime").getTime()).toString());
+                reply.getDataList().add(user);
+                System.out.println(reply.getDataList().size());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            send(reply);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void onSqlBookRecReqCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 1;
+        String sql = null;
+        try {
+            sql = new String(messageData.getData().get(0).getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs =  DataAccess.Query(sql);
+        MessageData reply = new MessageData();
+        reply.setMessageType(MessageType.sqlBookRecReq);
+        System.out.println(sql);
+
+        try {
+            while (rs.next()) {
+                ArrayList<String> book = new ArrayList<>();
+                book.add(String.valueOf(rs.getInt("BookID")));
+                book.add(rs.getString("BookName"));
+                book.add(rs.getString("BookType"));
+                book.add(rs.getString("AuthorName"));
+                book.add(rs.getString("PubName"));
+                book.add(rs.getString("PubDate"));
+                book.add(String.valueOf(rs.getInt("TotNum")));
+                book.add(String.valueOf(rs.getInt("LeftNum")));
+                book.add(rs.getString("Price"));
+                book.add(String.valueOf(rs.getDouble("Score")));
+                book.add(String.valueOf(rs.getInt("Reviews")));
+                reply.getDataList().add(book);
+                System.out.println(reply.getDataList().size());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            send(reply);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void onSqlFineRecReqCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 1;
+        String sql = null;
+        try {
+            sql = new String(messageData.getData().get(0).getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs =  DataAccess.Query(sql);
+        MessageData reply = new MessageData();
+        reply.setMessageType(MessageType.sqlFineRecReq);
+        System.out.println(sql);
+
+        try {
+            while (rs.next()) {
+                ArrayList<String> fine = new ArrayList<>();
+                fine.add(String.valueOf(rs.getInt("FineID")));
+                fine.add(String.valueOf(rs.getInt("RentID")));
+                fine.add(String.valueOf(rs.getInt("UserID")));
+                fine.add(rs.getString("UserName"));
+                fine.add(String.valueOf(rs.getDouble("FineMount")));
+                fine.add(new Date(rs.getTimestamp("FineDate").getTime()).toString());
+                reply.getDataList().add(fine);
+                System.out.println(reply.getDataList().size());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            send(reply);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void onSqlReturnRecReqCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 1;
+        String sql = null;
+        try {
+            sql = new String(messageData.getData().get(0).getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs =  DataAccess.Query(sql);
+        MessageData reply = new MessageData();
+        reply.setMessageType(MessageType.sqlReturnRecReq);
+        System.out.println(sql);
+
+        try {
+            while (rs.next()) {
+                ArrayList<String> back = new ArrayList<>();
+                back.add(String.valueOf(rs.getInt("RentID")));
+                back.add(String.valueOf(rs.getInt("UserID")));
+                back.add(rs.getString("UserName"));
+                back.add(String.valueOf(rs.getInt("BookID")));
+                back.add(rs.getString("BookName"));
+                back.add(new Date(rs.getTimestamp("RetDate").getTime()).toString());
+                back.add(new Date(rs.getTimestamp("ReturnDate").getTime()).toString());
+                reply.getDataList().add(back);
+                System.out.println(reply.getDataList().size());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            send(reply);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void onSqlRentRecReqCallBack(MessageData messageData) {
+        assert messageData.getData().size() >= 1;
+        System.out.println(messageData.getData().get(0));
+        String sql = null;
+        try {
+            sql = new String(messageData.getData().get(0).getBytes("UTF-8"),"UTF8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs =  DataAccess.Query(sql);
+        MessageData reply = new MessageData();
+        reply.setMessageType(MessageType.sqlRentRecReq);
+        System.out.println(sql);
+
+        try {
+            while (rs.next()) {
+                ArrayList<String> rent = new ArrayList<>();
+                rent.add(String.valueOf(rs.getInt("RentID")));
+                rent.add(String.valueOf(rs.getInt("UserID")));
+                rent.add(rs.getString("UserName"));
+                rent.add(String.valueOf(rs.getInt("BookID")));
+                rent.add(rs.getString("BookName"));
+                rent.add(new Date(rs.getTimestamp("RentDate").getTime()).toString());
+                rent.add(new Date(rs.getTimestamp("ReturnDate").getTime()).toString());
+                reply.getDataList().add(rent);
+                System.out.println(reply.getDataList().size());
+                ResultSet trs = null;
+
+                preparedStatement = DataAccess.getConnection1().prepareStatement("select * from RentNumUsers where UserID = ?");
+                preparedStatement.setInt(1,rs.getInt("UserID"));
+                trs = preparedStatement.executeQuery();
+
+                RentDetail rentDetail = new RentDetail();
+
+                if (trs.next()) {
+                    rentDetail.setRentNum(trs.getInt("RentNum"));
+                }
+
+                preparedStatement = DataAccess.getConnection1().prepareStatement("select * from FineUnSolvedUsers where UserID = ?");
+                preparedStatement.setInt(1,rs.getInt("UserID"));
+                trs = preparedStatement.executeQuery();
+
+                if (trs.next()) {
+                    rentDetail.setFineMount(trs.getDouble("FineMount"));
+                }
+
+                preparedStatement = DataAccess.getConnection1().prepareStatement("select * from BookUnReturnUsers where UserID = ?");
+                preparedStatement.setInt(1,rs.getInt("UserID"));
+                trs = preparedStatement.executeQuery();
+
+                while (trs.next()) {
+                    rentDetail.getBooks().add(trs.getString("BookName"));
+                }
+
+                reply.getRentDetails().add(rentDetail);
+                System.out.println(reply.getRentDetails().size());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            send(reply);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
     private void onFineReqCallBack(MessageData messageData) {
         System.out.println("fine");
+
         ArrayList<String> data = messageData.getData();
         assert data.size() >= 1;
         System.out.println(data);
@@ -200,14 +468,15 @@ public class SocketThread extends Thread {
         System.out.println(data);
         try {
             preparedStatement = DataAccess.getConnection().prepareStatement(
-                    "insert into ReturnRecord (RentID, BookID, UserID, RetDate)" +
-                            "values (?,?,?,?)",Statement.RETURN_GENERATED_KEYS
+                    "insert into ReturnRecord (RentID, BookID, UserID, RetDate, IsBroken)" +
+                            "values (?,?,?,?,?)",Statement.RETURN_GENERATED_KEYS
             );
 
             preparedStatement.setInt(1,Integer.valueOf(data.get(0)));
             preparedStatement.setInt(2,Integer.valueOf(data.get(1)));
             preparedStatement.setInt(3,Integer.valueOf(data.get(2)));
             preparedStatement.setTimestamp(4,Timestamp.valueOf(data.get(3)));
+            preparedStatement.setBoolean(5,false);
             System.out.println(preparedStatement.executeUpdate());
         } catch (SQLException e) {
             e.printStackTrace();
@@ -301,10 +570,17 @@ public class SocketThread extends Thread {
 
     private void onSqlReqCallBack(MessageData messageData) {
         assert messageData.getData().size() >= 1;
-        ResultSet rs =  DataAccess.Query(messageData.getData().get(0));
         MessageData reply = new MessageData();
         reply.setMessageType(MessageType.sqlReq);
 
+        String sql = messageData.getData().get(0);
+        try {
+            System.out.println(sql);
+            preparedStatement = DataAccess.getConnection().prepareStatement(sql);
+            System.out.println(preparedStatement.execute());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private void onAltPwdCallBack(MessageData messageData) {

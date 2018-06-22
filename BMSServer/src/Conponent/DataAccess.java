@@ -35,7 +35,8 @@ public class DataAccess {
     public static ResultSet Query(String sql) {
         ResultSet rs = null;
         try {
-            rs = statement.executeQuery(sql);
+            if (sql.contains("update")) {statement.execute(sql);}
+            else rs = statement.executeQuery(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -45,7 +46,8 @@ public class DataAccess {
     public static ResultSet Query1(String sql) {
         ResultSet rs = null;
         try {
-            rs = statement1.executeQuery(sql);
+            if (sql.contains("update")) {statement1.execute(sql);}
+            else rs = statement1.executeQuery(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -53,5 +55,6 @@ public class DataAccess {
     }
 
     public static Connection getConnection() {return connection;}
+    public static Connection getConnection1() {return connection1;}
 
 }

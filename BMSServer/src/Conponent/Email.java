@@ -118,7 +118,7 @@ public class Email {
 
 
         // 4. Subject: 邮件主题
-        message.setSubject("图书管理系统注册验证码", "UTF-8");
+        message.setSubject("图书管理系统验证码", "UTF-8");
 
 
         // 5. Content: 邮件正文（可以使用html标签）

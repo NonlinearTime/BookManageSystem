@@ -11,8 +11,10 @@ import com.company.RentDetail;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.cells.editors.base.JFXTreeTableCell;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import com.sun.mail.imap.protocol.MessageSet;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -39,9 +41,11 @@ import javafx.util.Callback;
 import javafx.util.Duration;
 import sample.Main;
 
+import javax.xml.crypto.Data;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -622,35 +626,51 @@ public class ManagerViewController implements ControlledStage, Initializable {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm in book!");
-//                        userViewController.getStage(Main.UserDetailDialogID).setTitle("书籍详情");
-//                        userViewController.setStage(Main.UserDetailDialogID);
-//                        DetailDialog detailDialogController = (DetailDialog) userViewController.getController(Main.UserDetailDialogID);
-//                        detailDialogController.getLabel1().setText("书籍编号：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel2().setText("书籍名称：" + books.get(cell.getIndex()).bookName.getValue());
-//                        detailDialogController.getLabel3().setText("书籍类别：" + books.get(cell.getIndex()).bookType.getValue());
-//                        detailDialogController.getLabel4().setText("作者：" + books.get(cell.getIndex()).bookAuthor.getValue());
-//                        detailDialogController.getLabel5().setText("出版社：" + books.get(cell.getIndex()).bookPub.getValue());
-//                        detailDialogController.getLabel6().setText("出版时间：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel7().setText("馆藏数量：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel8().setText("在馆数量：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel9().setText("价格：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel10().setText("评分：" + books.get(cell.getIndex()).bookID.getValue());
-//                        detailDialogController.getLabel11().setText("评论数量：" + books.get(cell.getIndex()).bookID.getValue());
-////                        detailDialogController.getLabel12().setText("书籍编号：" + books.get(cell.getIndex()).bookID.getValue());
+                        int index = cell.getIndex();
+                        ArrayList<String> book = DataContainer.managebooks.get(index);
+                        ManageBookOpDialogController manageBookOpDialogController = (ManageBookOpDialogController) managerViewController.getController(Main.ManagerBookDetailViewID);
+                        manageBookOpDialogController.clearInfo();
+                        manageBookOpDialogController.setBookIDField(book.get(0));
+                        manageBookOpDialogController.setBookNameField(book.get(1));
+                        manageBookOpDialogController.setBookClassField(book.get(2));
+                        manageBookOpDialogController.setBookAuthorField(book.get(3));
+                        manageBookOpDialogController.setBookPubField(book.get(4));
+                        manageBookOpDialogController.setBookPubDateField(book.get(5));
+                        manageBookOpDialogController.setBookTotNumField(book.get(6));
+                        manageBookOpDialogController.setBookLeftNumField(book.get(7));
+                        manageBookOpDialogController.setBookPriceField(book.get(8));
+                        manageBookOpDialogController.setBookGradeField(book.get(9));
+                        manageBookOpDialogController.setBookReviewsField(book.get(10));
+
+                        managerViewController.getStage(Main.ManagerBookDetailViewID).setTitle("图书详情");
+                        managerViewController.setStage(Main.ManagerBookDetailViewID);
+
                     }
                 });
                 cell.getBookItem().getOpBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of book!");
+                        int index = cell.getIndex();
+                        ArrayList<String> book = DataContainer.managebooks.get(index);
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.sqlReq);
+                        String sql = "delete from Book where bID = " + book.get(0);
+                        messageData.getData().add(sql);
+                        Connector.getInstance().send(messageData);
+
+                        DataContainer.managebooks.remove(index);
+                        books.remove(index);
+
+                        popHintDialog("下架图书成功");
                     }
                 });
                 return cell;
             }
         });
 
-        books.add(new BookTableItem("1","图书管理系统","工具书","lhm","hust","11"));
-        books.add(new BookTableItem("1","图书管理系统","工具书","lhm","hust","11"));
+//        books.add(new BookTableItem("1","图书管理系统","工具书","lhm","hust","11"));
+//        books.add(new BookTableItem("1","图书管理系统","工具书","lhm","hust","11"));
 
         bookTable.getColumns().setAll(bookID, bookName, bookType, bookAuthor, bookPub, bookNum, bookOp);
         bookTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
@@ -767,10 +787,11 @@ public class ManagerViewController implements ControlledStage, Initializable {
                         Connector.getInstance().send(messageData);
                         popHintDialog("已允许该用户借阅请求");
                         sql = "delete from RentRecord where RentID = " + DataContainer.managerents.get(cell.getIndex()).get(0);
-                        messageData.getData().clear();
-                        messageData.getData().add(sql);
-                        messageData.setMessageType(MessageType.sqlReq);
-                        Connector.getInstance().send(messageData);
+                        MessageData messageData1 = new MessageData();
+                        messageData1.getData().clear();
+                        messageData1.getData().add(sql);
+                        messageData1.setMessageType(MessageType.sqlReq);
+                        Connector.getInstance().send(messageData1);
 
                         DataContainer.managerents.remove(cell.getIndex());
                         rents.remove(cell.getIndex());
@@ -857,12 +878,20 @@ public class ManagerViewController implements ControlledStage, Initializable {
                 cell.getFineItem().getDetailBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
-                        System.out.println("I'm in time!");
-//                        DetailDialog detailDialog = (DetailDialog)userViewController.getController(Main.UserDetailDialogID);
-//                        detailDialog.getLabel1().setText("lalalala");
-//
-//                        userViewController.getStage(Main.UserDetailDialogID).setTitle("罚款详情");
-//                        userViewController.setStage(Main.UserDetailDialogID);
+                        System.out.println("I'm in rent!");
+                        ManageFineDialogController manageFineDialogController = (ManageFineDialogController) managerViewController.getController(Main.ManagerFineDetailViewID);
+                        int index = cell.getIndex();
+                        assert DataContainer.managebacks.size() > index;
+                        ArrayList<String> fine = DataContainer.managefines.get(index);
+                        manageFineDialogController.clearInfo();
+                        manageFineDialogController.setFineIDField(fine.get(0));
+                        manageFineDialogController.setRentIDField(fine.get(1));
+                        manageFineDialogController.setUserIDName(fine.get(2));
+                        manageFineDialogController.setUserNameFIeld(fine.get(3));
+                        manageFineDialogController.setFineMountField(fine.get(4));
+                        manageFineDialogController.setFineDateField(fine.get(5));
+
+                        managerViewController.setStage(Main.ManagerFineDetailViewID);
 
                     }
                 });
@@ -870,14 +899,31 @@ public class ManagerViewController implements ControlledStage, Initializable {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of time!");
+                        ManageFineDialogController manageFineDialogController = (ManageFineDialogController) managerViewController.getController(Main.ManagerFineDetailViewID);
+                        int index = cell.getIndex();
+                        assert DataContainer.managebacks.size() > index;
+                        ArrayList<String> fine = DataContainer.managefines.get(index);
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.sqlReq);
+                        String sql = "update FineReg set isSolved = 1 where  fID = " + fine.get(0);
+                        messageData.getData().add(sql);
+                        Connector.getInstance().send(messageData);
+                        System.out.println(messageData.getData().get(0));
+
+                        sql = "delete from FineRecord where fineID = " + fine.get(0);
+                        MessageData messageData1 = new MessageData();
+                        messageData1.setMessageType(MessageType.sqlReq);
+                        messageData1.getData().clear();
+                        messageData1.getData().add(sql);
+                        Connector.getInstance().send(messageData1);
+                        DataContainer.managefines.remove(index);
+                        fines.remove(index);
+                        popHintDialog("收取罚款成功");
                     }
                 });
                 return cell;
             }
         });
-
-        fines.add(new FineTableItem("1","lhm","2","2018","2019"));
-        fines.add(new FineTableItem("1","lhm","2","lhm","hust"));
 
         fineTable.getColumns().setAll(fineID, frentID, fuserID, fineMount, fineDate, fineOp);
         fineTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
@@ -945,22 +991,91 @@ public class ManagerViewController implements ControlledStage, Initializable {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm in rent!");
-//                        userViewController.getStage(Main.UserDetailDialogID).setTitle("借阅详情");
-//                        userViewController.setStage(Main.UserDetailDialogID);
+                        ManageBackDialogController manageBackDialogController = (ManageBackDialogController) managerViewController.getController(Main.ManagerBackDetailViewID);
+                        int index = cell.getIndex();
+                        assert DataContainer.managebacks.size() > index;
+                        ArrayList<String> back = DataContainer.managebacks.get(index);
+                        manageBackDialogController.clearInfo();
+                        manageBackDialogController.setRentIDField(back.get(0));
+                        manageBackDialogController.setUserIDField(back.get(1));
+                        manageBackDialogController.setUserNameField(back.get(2));
+                        manageBackDialogController.setBookIDField(back.get(3));
+                        manageBackDialogController.setBookNameField(back.get(4));
+                        manageBackDialogController.setRetDateField(back.get(5));
+                        manageBackDialogController.setReturnDateField(back.get(6));
+
+                        managerViewController.setStage(Main.ManagerBackDetailViewID);
                     }
                 });
                 cell.getBackItem().getOpBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of rent!");
+                        SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );
+                        ManageBackDialogController manageBackDialogController = (ManageBackDialogController) managerViewController.getController(Main.ManagerBackDetailViewID);
+                        int index = cell.getIndex();
+                        assert DataContainer.managebacks.size() > index;
+                        ArrayList<String> back = DataContainer.managebacks.get(index);
+                        Date retDate = null;
+                        Date returnDate = null;
+                        try {
+                            retDate = sdf.parse(back.get(5) + " 00:00:00");
+                            returnDate = sdf.parse(back.get(6) + " 00:00:00");
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.sqlReq);
+                        String sql = "update BorrowReg set isBack = 1 where rID = " + back.get(0);
+                        System.out.println(sql);
+                        messageData.getData().add(sql);
+                        Connector.getInstance().send(messageData);
+
+                        if (retDate.compareTo(returnDate) > 0) {
+                            sql = "insert into FineReg (uID, rID, fMount, isSolved) values (" +
+                                    back.get(1) + "," + back.get(0) + "," + "10" + "," +
+                                    "0" +
+                                    ")";
+                            MessageData messageData1 = new MessageData();
+                            messageData1.setMessageType(MessageType.sqlReq);
+                            messageData1.getData().clear();
+                            messageData1.getData().add(sql);
+                            Connector.getInstance().send(messageData1);
+
+                            System.out.println(sql);
+
+                            popHintDialog("归还逾期！已开具罚单！");
+
+                            try {
+                                Thread.sleep(500);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            MessageData messageData2 = new MessageData();
+                            messageData2.setMessageType(MessageType.sqlReq);
+                            messageData2.getData().clear();
+                            messageData2.getData().add("delete from ReturnRecord where RentID = " + back.get(0));
+                            Connector.getInstance().send(messageData2);
+                            DataContainer.managebacks.remove(index);
+                            backs.remove(index);
+
+                            return;
+                        }
+
+                        MessageData messageData1 = new MessageData();
+                        messageData1.getData().clear();
+                        messageData1.getData().add("delete from ReturnRecord where RetID = " + back.get(0));
+                        messageData1.setMessageType(MessageType.sqlReq);
+                        Connector.getInstance().send(messageData1);
+                        DataContainer.managebacks.remove(index);
+                        backs.remove(index);
+                        popHintDialog("正常归还，已批准还书申请");
                     }
                 });
                 return cell;
             }
         });
-
-        backs.add(new BackTableItem("1","1","lhm","2","2018","2019"));
-        backs.add(new BackTableItem("1","1","lhm","工具书","lhm","hust"));
 
         backTable.getColumns().setAll(bRentID, bUserID, bUserName, bBookID, bRentDate, bBackDate, backOp);
         backTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
@@ -1030,26 +1145,73 @@ public class ManagerViewController implements ControlledStage, Initializable {
                         System.out.println("I'm in rent!");
 //                        userViewController.getStage(Main.UserDetailDialogID).setTitle("借阅详情");
 //                        userViewController.setStage(Main.UserDetailDialogID);
+                        ManagerUserDetailDialogController managerUserDetailDialogController = (ManagerUserDetailDialogController) managerViewController.getController(Main.ManagerUserDetailViewID);
+
+                        int index = cell.getIndex();
+                        ArrayList<String> user = DataContainer.manageusers.get(index);
+
+                        managerUserDetailDialogController.setUserIDField(user.get(0));
+                        managerUserDetailDialogController.setUserNameField(user.get(1));
+                        managerUserDetailDialogController.setUserPwdField(user.get(2));
+                        managerUserDetailDialogController.setUserEMailField(user.get(3));
+                        managerUserDetailDialogController.setUserTeleField(user.get(4));
+                        managerUserDetailDialogController.setUserJobField(user.get(5));
+                        managerUserDetailDialogController.setUserRegisterTimeField(user.get(6));
+
+                        managerViewController.getStage(Main.ManagerUserDetailViewID).setTitle("读者详情");
+                        managerViewController.setStage(Main.ManagerUserDetailViewID);
+
                     }
                 });
                 cell.getUserItem().getAltBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
                         System.out.println("I'm out of rent!");
+                        ManagerUserDetailDialogController managerUserDetailDialogController = (ManagerUserDetailDialogController) managerViewController.getController(Main.ManagerUserDetailViewID);
+
+                        int index = cell.getIndex();
+                        ArrayList<String> user = DataContainer.manageusers.get(index);
+
+                        managerUserDetailDialogController.setUserIDField(user.get(0));
+                        managerUserDetailDialogController.setUserNameField(user.get(1));
+                        managerUserDetailDialogController.setUserPwdField(user.get(2));
+                        managerUserDetailDialogController.setUserEMailField(user.get(3));
+                        managerUserDetailDialogController.setUserTeleField(user.get(4));
+                        managerUserDetailDialogController.setUserJobField(user.get(5));
+                        managerUserDetailDialogController.setUserRegisterTimeField(user.get(6));
+
+                        managerViewController.getStage(Main.ManagerUserDetailViewID).setTitle("读者详情");
+                        managerViewController.setStage(Main.ManagerUserDetailViewID);
                     }
                 });
                 cell.getUserItem().getDeleteBtn().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
+                        int index = cell.getIndex();
+                        ArrayList<String> user = DataContainer.manageusers.get(index);
 
+
+                        MessageData messageData = new MessageData();
+                        messageData.setMessageType(MessageType.sqlReq);
+
+                        String sql = "delete from User where uID = " + user.get(0);
+
+                        messageData.getData().add(sql);
+
+                        Connector.getInstance().send(messageData);
+
+                        DataContainer.manageusers.remove(index);
+                        users.remove(index);
+
+                        popHintDialog("删除用户成功");
                     }
                 });
                 return cell;
             }
         });
 
-        users.add(new UserTableItem("1","lhm","2","2018","2019",""));
-        users.add(new UserTableItem("1","lhm","工具书","lhm","hust",""));
+//        users.add(new UserTableItem("1","lhm","2","2018","2019",""));
+//        users.add(new UserTableItem("1","lhm","工具书","lhm","hust",""));
 
         userTable.getColumns().setAll(uUserID, uUserName, uEmail, uTele , uJob, uDate, userOp);
         userTable.setColumnResizePolicy(JFXTreeTableView.CONSTRAINED_RESIZE_POLICY);
@@ -1166,10 +1328,10 @@ public class ManagerViewController implements ControlledStage, Initializable {
         String sql = "select * from BookReqView ";
         ArrayList<String> alter = new ArrayList<>();
         String sqlBookID = bookIDField.getText().trim().equals("") ? "" : "BookID = " + bookIDField.getText().trim();
-        String sqlBookName = bookNameField.getText().trim().equals("") ? "" : "BookName = '" +  bookNameField.getText().trim() + "'";
+        String sqlBookName = bookNameField.getText().trim().equals("") ? "" : "BookName like '%" +  bookNameField.getText().trim() + "%'";
         String sqlBookClass = bookClassComboList.getEditor().getText().trim().equals("") ? "" : "BookType = '" + bookClassComboList.getSelectionModel().getSelectedItem() + "'";
-        String sqlBookAuthor = authorTield.getText().trim().equals("") ? "" : "AuthorName = '" + authorTield.getText().trim() + "'";
-        String sqlPublisher = pubField.getText().trim().equals("") ? "" : "PubName = '" + pubField.getText().trim() + "'";
+        String sqlBookAuthor = authorTield.getText().trim().equals("") ? "" : "AuthorName like '%" + authorTield.getText().trim() + "%'";
+        String sqlPublisher = pubField.getText().trim().equals("") ? "" : "PubName like '%" + pubField.getText().trim() + "%'";
         System.out.println(bookClassComboList.getEditor().getText().trim());
         if (!sqlBookID.equals("")) alter.add(sqlBookID);
         if (!sqlBookName.equals("")) alter.add(sqlBookName);
@@ -1193,6 +1355,12 @@ public class ManagerViewController implements ControlledStage, Initializable {
         messageData.getData().add(sql);
         Connector.getInstance().send(messageData);
         books.clear();
+    }
+
+    public void onBookUploadButtonClicked() {
+        ManageBookUploadDialogController manageBookUploadDialogController = (ManageBookUploadDialogController) managerViewController.getController(Main.ManagerBookUploadViewID);
+        manageBookUploadDialogController.clearInfo();
+        managerViewController.setStage(Main.ManagerBookUploadViewID);
     }
 
     public void onUserSearchButtonClicked() {
@@ -1243,7 +1411,7 @@ public class ManagerViewController implements ControlledStage, Initializable {
     public void addBookTableItem(ArrayList<String> book) {
         assert book.size() >= 11;
         // (BookID, BookName, BookType, AuthorName, PubName, PubDate, TotNum, LeftNum, Price, Score, Reviews)
-        books.add(new BookTableItem(book.get(0), book.get(1), book.get(2), book.get(3), book.get(4), book.get(6)));
+        books.add(new BookTableItem(book.get(0), book.get(1), book.get(2), book.get(3), book.get(4), book.get(7)));
     }
 
     public void addUserTableItem(ArrayList<String> user) {

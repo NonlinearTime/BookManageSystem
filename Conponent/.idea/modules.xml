@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Rent/Rent.iml" filepath="$PROJECT_DIR$/Rent/Rent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Conponent.iml" filepath="$PROJECT_DIR$/Conponent.iml" />
     </modules>
   </component>
 </project>

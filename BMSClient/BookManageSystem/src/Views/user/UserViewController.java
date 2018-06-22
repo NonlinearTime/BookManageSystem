@@ -759,10 +759,10 @@ public class UserViewController implements ControlledStage, Initializable {
         String sql = "select * from Book ";
         ArrayList<String> alter = new ArrayList<>();
         String sqlBookID = bookIDField.getText().trim().equals("") ? "" : "bID = " + bookIDField.getText().trim();
-        String sqlBookName = bookNameField.getText().trim().equals("") ? "" : "bName = '" +  bookNameField.getText().trim() + "'";
+        String sqlBookName = bookNameField.getText().trim().equals("") ? "" : "bName like '%" +  bookNameField.getText().trim() + "%'";
         String sqlBookClass = bookClassComboList.getEditor().getText().trim().equals("") ? "" : "bType = '" + bookClassComboList.getSelectionModel().getSelectedItem() + "'";
-        String sqlBookAuthor = authorTield.getText().trim().equals("") ? "" : "aName = '" + authorTield.getText().trim() + "'";
-        String sqlPublisher = pubField.getText().trim().equals("") ? "" : "pubName = '" + pubField.getText().trim() + "'";
+        String sqlBookAuthor = authorTield.getText().trim().equals("") ? "" : "aName like '%" + authorTield.getText().trim() + "%'";
+        String sqlPublisher = pubField.getText().trim().equals("") ? "" : "pubName like '%" + pubField.getText().trim() + "%'";
         System.out.println(bookClassComboList.getEditor().getText().trim());
         if (!sqlBookID.equals("")) alter.add(sqlBookID);
         if (!sqlBookName.equals("")) alter.add(sqlBookName);

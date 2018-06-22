@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="533.0" prefWidth="793.0" stylesheets="@../login/FndBkPwd.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.administrator.ManageBookOpDialogController">
+   <children>
+      <VBox alignment="CENTER" layoutX="49.0" layoutY="23.0" prefHeight="487.0" prefWidth="696.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="图书编号" />
+                  <JFXTextField fx:id="BookIDField" prefHeight="24.0" prefWidth="185.0" />
+                  <Pane prefHeight="100.0" prefWidth="66.0" />
+                  <Label text="图书名称" />
+                  <JFXTextField fx:id="BookNameField" prefHeight="24.0" prefWidth="185.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="图书类别" />
+                  <JFXTextField fx:id="BookClassField" prefHeight="24.0" prefWidth="185.0" />
+                  <Pane prefHeight="100.0" prefWidth="66.0" />
+                  <Label text="作者姓名" />
+                  <JFXTextField fx:id="BookAuthorField" prefHeight="24.0" prefWidth="185.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="出版机构" />
+                  <JFXTextField fx:id="BookPubField" prefHeight="24.0" prefWidth="185.0" />
+                  <Pane prefHeight="100.0" prefWidth="66.0" />
+                  <Label text="出版日期" />
+                  <JFXTextField fx:id="BookPubDateField" prefHeight="24.0" prefWidth="185.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="馆藏数量" />
+                  <JFXTextField fx:id="BookTotNumField" prefHeight="24.0" prefWidth="185.0" />
+                  <Pane prefHeight="100.0" prefWidth="66.0" />
+                  <Label text="在馆数量" />
+                  <JFXTextField fx:id="BookLeftNumField" prefHeight="24.0" prefWidth="185.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="图书价格" />
+                  <JFXTextField fx:id="BookPriceField" prefHeight="24.0" prefWidth="185.0" />
+                  <Pane prefHeight="100.0" prefWidth="66.0" />
+                  <Label text="图书评分" />
+                  <JFXTextField fx:id="BookGradeField" prefHeight="24.0" prefWidth="185.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="评价数量" />
+                  <JFXTextField fx:id="BookReviewsField" prefHeight="24.0" prefWidth="185.0" />
+                  <Pane prefHeight="74.0" prefWidth="324.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="696.0" spacing="60.0">
+               <children>
+                  <JFXButton onMouseClicked="#onChangeButtonClicked" text="修改" />
+                  <JFXButton onMouseClicked="#onCancelrButtonClicked" text="取消" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
