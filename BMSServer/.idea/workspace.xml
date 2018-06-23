@@ -6,179 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManageBackDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManageBackDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManageBookOpDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManageBookOpDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManageFineDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManageFineDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerUserDetailDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerUserDetailDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManageBackDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManageBackDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManageBookOpDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManageBookOpDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManageFineDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManageFineDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerUserDetailDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerUserDetailDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RentDetail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e/storage_v2/_src_/schema/BookDB.Rxnwdg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e/storage_v2/_src_/schema/BookDB.Rxnwdg.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/BookDB_Rxnwdg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Conponent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JavaFXApp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JavaFXApp1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/CSS/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/RentDetailView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/RentDetail.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/annotations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/FndBkPwdDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/LoginStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegDialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/login/RegisterDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/AltPwdDialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/DetailDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/DetailDialogStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/OperationDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/ProfileView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserAltpwdDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/cash-register.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/exchange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/key_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/library.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/network.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/open-book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/quill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/reader.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/rent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/stick-man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/stopwatch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/pictures/team.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/sample/sample.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/.idea/artifacts/Conponent_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/out/artifacts/Conponent_jar/Conponent.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/out/production/Conponent/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/out/production/Conponent/com/company/RentDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Conponent/src/com/company/RentDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Conponent/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Conponent/Connector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerView.css" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$22.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$23.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$24.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$25.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$27.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$28.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$29.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$30.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$31.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$31.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$32.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$32.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$33.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$33.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$34.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$34.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$35.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$35.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$36.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$36.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$37.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$37.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$38.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$38.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$39.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$39.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$40.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/administrator/ManagerViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/data/DataContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/data/DataContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/user/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/Views/user/UserViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/out/production/BookManageSystem/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Conponent/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Conponent/Connector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerView.css" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/administrator/ManagerViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/data/DataContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/data/DataContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/user/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/Views/user/UserViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BMSClient/BookManageSystem/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BMSServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BMSServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BMSServer/Conponent/DataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BMSServer/Conponent/DataAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BMSServer/Conponent/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BMSServer/Conponent/Email.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BMSServer/Conponent/MessageData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BMSServer/Conponent/MessageData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BMSServer/Conponent/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BMSServer/Conponent/MessageType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BMSServer/Network/NetworkConnection$ConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BMSServer/Network/NetworkConnection$ConnectionThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BMSServer/Network/SocketThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BMSServer/Network/SocketThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conponent/DataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/DataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conponent/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conponent/MessageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/MessageData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conponent/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Network/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/NetworkConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Network/SocketThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/SocketThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Conponent/.idea/artifacts/Rent_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Conponent/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Conponent/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Conponent/Rent/Rent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Conponent/Conponent.iml" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -330,7 +158,7 @@
       <file leaf-file-name="SocketThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Network/SocketThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="8164">
               <caret line="327" column="17" selection-start-line="327" selection-start-column="17" selection-end-line="327" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -343,7 +171,7 @@
         <entry file="jar://$PROJECT_DIR$/../Conponent/out/artifacts/Conponent_jar/Conponent.jar!/com/company/RentDetail.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -414,7 +242,7 @@
       <file leaf-file-name="MessageData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conponent/MessageData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
+            <state relative-caret-position="468">
               <caret line="21" column="27" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -490,6 +318,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -545,8 +375,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -688,18 +516,18 @@
       <workItem from="1529493392815" duration="20244000" />
       <workItem from="1529567082478" duration="2520000" />
       <workItem from="1529571241958" duration="22772000" />
+      <workItem from="1529651454012" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130282000" />
+    <option name="totallyTimeSpent" value="130320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32921812" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -710,10 +538,9 @@
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32921812" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32921812" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.13072917" />
-      <window_info anchor="bottom" id="Statistic" order="16" weight="0.32921812" />
+      <window_info active="true" anchor="bottom" id="Statistic" order="16" visible="true" weight="0.32921812" />
       <window_info anchor="right" id="Database" order="5" visible="true" weight="0.12083333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -722,8 +549,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" id="JetGradle" order="6" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.32921812" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32921812" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
       <window_info anchor="bottom" id="Changes" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1086,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Conponent/MessageData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="468">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1138,7 +967,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/SocketThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="8164">
           <caret line="327" column="17" selection-start-line="327" selection-start-column="17" selection-end-line="327" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1149,7 +978,7 @@
     <entry file="jar://$PROJECT_DIR$/../Conponent/out/artifacts/Conponent_jar/Conponent.jar!/com/company/RentDetail.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>

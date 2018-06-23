@@ -7,176 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManageBackDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManageBackDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManageBookOpDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManageBookOpDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManageFineDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManageFineDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerUserDetailDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerUserDetailDialogController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManageBackDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManageBackDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManageBookOpDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManageBookOpDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManageFineDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManageFineDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerUserDetailDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerUserDetailDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/artifacts/RentDetail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e/storage_v2/_src_/schema/BookDB.Rxnwdg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e/storage_v2/_src_/schema/BookDB.Rxnwdg.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/libraries/BookDB_Rxnwdg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/libraries/Conponent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/libraries/JavaFXApp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/.idea/libraries/JavaFXApp1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/CSS/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/administrator/ManagerView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/administrator/RentDetailView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/data/RentDetail.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/data/annotations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/login/FndBkPwd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/login/FndBkPwdDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/login/LoginDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/login/LoginStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/login/RegDialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/login/RegisterDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/AltPwdDialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/DetailDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/DetailDialogStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/OperationDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/ProfileView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/ProfileView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/UserAltpwdDialog.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/UserView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/Views/user/UserViewStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/cash-register.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/exchange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/key_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/library.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/network.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/open-book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/quill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/reader.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/rent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/stick-man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/stopwatch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/pictures/team.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BookManageSystem/sample/sample.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/.idea/artifacts/Conponent_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/out/artifacts/Conponent_jar/Conponent.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/out/production/Conponent/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/out/production/Conponent/com/company/RentDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Conponent/src/com/company/RentDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$22.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$23.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$24.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$25.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$27.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$28.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$29.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$30.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$31.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$31.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$32.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$33.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$33.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$34.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$35.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$35.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$36.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$36.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$37.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$38.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$38.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$39.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$39.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$40.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BackTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$BookTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$FineTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$RentTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController$UserTableItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/administrator/ManagerViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/DataContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/data/DataContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/Views/user/UserViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookManageSystem/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookManageSystem/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conponent/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conponent/Connector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/administrator/ManagerView.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerView.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/administrator/ManagerView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/data/DataContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/data/DataContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/user/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/user/UserViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/.idea/dataSources/5a0e1762-1e94-4d3e-b187-d8a9bc56207e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BMSServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/BMSServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/BMSServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/DataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/DataAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/Email.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Conponent/MessageType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Network/NetworkConnection$ConnectionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Network/NetworkConnection$ConnectionThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Network/SocketThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/out/production/BMSServer/Network/SocketThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/DataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/DataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Conponent/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Network/NetworkConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Network/NetworkConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BMSServer/src/Network/SocketThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BMSServer/src/Network/SocketThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Conponent/.idea/artifacts/Rent_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Conponent/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Conponent/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Conponent/Rent/Rent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Conponent/Conponent.iml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -401,7 +233,7 @@
       <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="5252">
               <caret line="237" column="59" selection-start-line="237" selection-start-column="59" selection-end-line="237" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -413,7 +245,7 @@
       <file leaf-file-name="ManagerViewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11932">
+            <state relative-caret-position="32968">
               <caret line="1364" selection-start-line="1364" selection-end-line="1364" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -425,8 +257,8 @@
       <file leaf-file-name="UserViewController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="848" column="50" lean-forward="true" selection-start-line="848" selection-start-column="50" selection-end-line="848" selection-end-column="50" />
+            <state relative-caret-position="1633">
+              <caret line="872" lean-forward="true" selection-start-line="872" selection-end-line="872" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -437,36 +269,10 @@
       <file leaf-file-name="ManageBookOpDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookOpDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1439">
+            <state relative-caret-position="1742">
               <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#2112#2113#0" expanded="true" />
-                <element signature="e#2149#2150#0" expanded="true" />
-                <element signature="e#2222#2223#0" expanded="true" />
-                <element signature="e#2250#2251#0" expanded="true" />
-                <element signature="e#2338#2339#0" expanded="true" />
-                <element signature="e#2378#2379#0" expanded="true" />
-                <element signature="e#2458#2459#0" expanded="true" />
-                <element signature="e#2499#2500#0" expanded="true" />
-                <element signature="e#2574#2575#0" expanded="true" />
-                <element signature="e#2603#2604#0" expanded="true" />
-                <element signature="e#2692#2693#0" expanded="true" />
-                <element signature="e#2723#2724#0" expanded="true" />
-                <element signature="e#2814#2815#0" expanded="true" />
-                <element signature="e#2843#2844#0" expanded="true" />
-                <element signature="e#2932#2933#0" expanded="true" />
-                <element signature="e#2961#2962#0" expanded="true" />
-                <element signature="e#3054#3055#0" expanded="true" />
-                <element signature="e#3085#3086#0" expanded="true" />
-                <element signature="e#3142#3143#0" expanded="true" />
-                <element signature="e#3172#3173#0" expanded="true" />
-                <element signature="e#3266#3267#0" expanded="true" />
-                <element signature="e#3297#3298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -475,7 +281,7 @@
       <file leaf-file-name="ManageBackDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBackDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1094">
+            <state relative-caret-position="104">
               <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="13" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -484,21 +290,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManageBookUploadDialog.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookUploadDialog.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="224" selection-start-line="12" selection-start-column="224" selection-end-line="12" selection-end-column="224" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ManageBookUploadDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookUploadDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="884">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -515,7 +311,7 @@
       <file leaf-file-name="ManagerUserDetailDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerUserDetailDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="1326">
               <caret line="73" column="73" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -527,7 +323,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="1404">
               <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
             </state>
           </provider>
@@ -669,7 +465,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -699,6 +495,12 @@
               <item name="BookManageSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BookManageSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookManageSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pictures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BookManageSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -762,7 +564,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -934,19 +736,21 @@
       <workItem from="1529481901891" duration="3469000" />
       <workItem from="1529493854509" duration="33300000" />
       <workItem from="1529571364893" duration="38084000" />
+      <workItem from="1529651504655" duration="53000" />
+      <workItem from="1529655423237" duration="1385000" />
+      <workItem from="1529721532357" duration="319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308692000" />
+    <option name="totallyTimeSpent" value="310449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="-1" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32921812" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -957,11 +761,10 @@
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32959184" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32921812" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32921812" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.12708333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14963503" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32826748" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.12669447" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -969,8 +772,10 @@
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" id="JetGradle" order="6" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.32921812" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32921812" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Changes" order="8" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1004,13 +809,51 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookUploadDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://66779b74-362d-4391-b421-42f6ea6e850e/schema/BookDB/table/RentRecord">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerUserDetailDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="73" column="73" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22048">
+          <caret line="848" column="50" lean-forward="true" selection-start-line="848" selection-start-column="50" selection-end-line="848" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Conponent/Email.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,9 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1117,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1219,11 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,14 +1073,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBackDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1273,45 +1097,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageFineDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerUserDetailDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageFineDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1329,25 +1118,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookOpDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookUploadDialog.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="224" selection-start-line="12" selection-start-column="224" selection-end-line="12" selection-end-column="224" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerUserDetailDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="1326">
           <caret line="73" column="73" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1357,43 +1130,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookOpDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1439">
+        <state relative-caret-position="1742">
           <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-            <element signature="e#2149#2150#0" expanded="true" />
-            <element signature="e#2222#2223#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2338#2339#0" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2458#2459#0" expanded="true" />
-            <element signature="e#2499#2500#0" expanded="true" />
-            <element signature="e#2574#2575#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-            <element signature="e#2723#2724#0" expanded="true" />
-            <element signature="e#2814#2815#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3054#3055#0" expanded="true" />
-            <element signature="e#3085#3086#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-            <element signature="e#3172#3173#0" expanded="true" />
-            <element signature="e#3266#3267#0" expanded="true" />
-            <element signature="e#3297#3298#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Conponent/Connector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="5252">
           <caret line="237" column="59" selection-start-line="237" selection-start-column="59" selection-end-line="237" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1403,15 +1150,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
+        <state relative-caret-position="1404">
           <caret line="57" column="85" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBookUploadDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="884">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -1424,7 +1171,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManageBackDialogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1094">
+        <state relative-caret-position="104">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="13" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1434,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/administrator/ManagerViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11932">
+        <state relative-caret-position="32968">
           <caret line="1364" selection-start-line="1364" selection-end-line="1364" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1444,8 +1191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/user/UserViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="848" column="50" lean-forward="true" selection-start-line="848" selection-start-column="50" selection-end-line="848" selection-end-column="50" />
+        <state relative-caret-position="1633">
+          <caret line="872" lean-forward="true" selection-start-line="872" selection-end-line="872" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
